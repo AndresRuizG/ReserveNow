@@ -1,3 +1,21 @@
 <resources>
     <string name="app_name">My Application</string>
+    <string name="BackgoundGym">TODO</string>
+    <string name="FondoTransparente">TODO</string>
+    <string name="olvidaste_tu_contrase"><u>¿Olvidaste tu contraseña?</u></string>
+    <string name="recordarme">Recordarme</string>
+    <string name="correo_electronico">Correo Electrónico</string>
+    <string name="contrasenia">Contraseña</string>
+    <string name="gymfondo">GymFondo</string>
+    <string name="userfit">userFit</string>
+    <string name="pass">pass</string>
+    <string name="btnInicioSesion">Iniciar Sesión</string>
+    <string name="btnRegistrarse">Registrarse</string>
+    <string name="no_tienes_cuenta">¿Aún no tienes cuenta?</string>
+    <string name="imgcorreo">imgcorreo</string>
+    <string name="confirmar_contrase_a">Confirmar Contraseña</string>
+    <string name="imgUser">TODO</string>
+    <string name="nombre">Nombre</string>
+    <string name="imgGoogle">TODO</string>
+    <string name="imgFacebook">TODO</string>
 </resources>
