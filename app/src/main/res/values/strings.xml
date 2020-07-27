@@ -1,3 +1,24 @@
 <resources>
     <string name="app_name">My Application</string>
+    <string name="txtMembresia">Membresia</string>
+    <string name="txtAgendar">Agendar</string>
+    <string name="txtHistorial">Historial</string>
+    <string name="txtAdministrar">Administrar</string>
+    <string name="title_activity_admin">AdminActivity</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
+    <string name="txtAdminDeportista">Deportistas</string>
+    <string name="txtAdminHorarios">Horarios</string>
+    <string name="txtInicio">Inicio</string>
+    <string name="txtFinal">Final</string>
+    <string name="txtEtiqueta">Etiqueta</string>
+    <string name="SelectDia">Seleccione un dia</string>
+    <string-array name="spinner_dias">
+        <item>Lunes - Viernes</item>
+        <item>Sabado</item>
+
+    </string-array>
 </resources>

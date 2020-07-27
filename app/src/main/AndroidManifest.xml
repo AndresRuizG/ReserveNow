@@ -2,6 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.projectmoviles.myapplication">
 
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <uses-feature android:name="android.hardware.type.watch" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,7 +13,20 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".User.UsuarioActivity">
+        <activity android:name=".admin.AgendaActivity"></activity>
+        <activity android:name=".admin.AgregarHorarioActivity" />
+        <activity android:name=".admin.HorariosActivity" />
+        <activity android:name=".AdminhorariosActivity" />
+        <activity android:name=".admin.AdminActivity" />
+
+        <meta-data
+            android:name="com.google.android.wearable.standalone"
+            android:value="true" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity android:name=".admin.HomeCoachActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
