@@ -13,14 +13,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".User.UHistorialEntreActivity"></activity>
+        <activity android:name=".UHistorialActivity"></activity>
+        <activity android:name=".User.UHistorialEntreActivity" />
         <activity android:name=".User.UAgendActivity" />
         <activity android:name=".admin.AgendaActivity" />
         <activity android:name=".admin.AgregarHorarioActivity" />
         <activity android:name=".admin.HorariosActivity" />
         <activity android:name=".admin.AdminActivity" />
-        <activity android:name=".user.UAgenAgregarActivity" />
-        <activity android:name=".user.UHistorialActivity" />
+        <activity android:name=".User.UHistorialActivity" />
         <activity android:name=".User.UsuarioActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

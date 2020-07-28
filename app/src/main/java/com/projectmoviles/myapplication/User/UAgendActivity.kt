@@ -7,7 +7,7 @@ import com.projectmoviles.myapplication.R
 import com.projectmoviles.myapplication.user.UAgenAgregarActivity
 import kotlinx.android.synthetic.main.activity_u_agend.*
 import kotlinx.android.synthetic.main.activity_u_agend.btn_homeusuario
-import kotlinx.android.synthetic.main.activity_u_historial.*
+import kotlinx.android.synthetic.main.activity_u_historial3.*
 
 class UAgendActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

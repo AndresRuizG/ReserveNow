@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/ic_gfondo"
 
-    tools:context=".user.UHistorialActivity">
+    tools:context=".user.UHistorial3Activity">
 
 
     <ImageButton
