@@ -39,16 +39,47 @@
     <string name="pase_mensual">PASE MENSUAL</string>
     <string name="_22_00">$22,00</string>
     <string name="body_combat">-Body Combat</string>
-    <string name="aer_bicos">-Aeróbicos</string>
+    <string name="aer_bicos">Aeróbicos</string>
     <string name="boton_derecha">TODO</string>
     <string name="boton_izquierda">TODO</string>
     <string name="membresia">Membresia</string>
     <string name="home_icono">TODO</string>
     <string name="pase_semestral">PASE SEMESTRAL</string>
     <string name="_120_00">$120,00</string>
-    <string name="aer_bicos">-Aeróbicos</string>
     <string name="pase_anual">PASE ANUAL</string>
-    <string name="aer_bicos">-Aeróbicos</string>
     <string name="_240_00">$240,00</string>
     <string name="ingresa_tus_datos">INGRESA TUS DATOS</string>
+
+    <string name="txtMembresia">Membresia</string>
+
+    <string name="txtAgendar">Agendar</string>
+
+    <string name="txtHistorial">Historial</string>
+
+    <string name="txtAdministrar">Administrar</string>
+
+    <string name="title_activity_admin">AdminActivity</string>
+    <string name="hello_world">Hello Square World!</string>
+
+    <string name="txtAdminDeportista">Deportistas</string>
+
+    <string name="txtAdminHorarios">Horarios</string>
+
+    <string name="txtInicio">Inicio</string>
+
+    <string name="txtFinal">Final</string>
+
+    <string name="txtEtiqueta">Etiqueta</string>
+
+    <string name="SelectDia">Seleccione un dia</string>
+
+
+    <string-array name="spinner_dias">
+
+        <item>Lunes - Viernes</item>
+
+        <item>Sabado</item>
+
+    </string-array>
+
 </resources>

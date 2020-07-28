@@ -1,8 +1,9 @@
-package com.projectmoviles.myapplication
+package com.projectmoviles.myapplication.User
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.projectmoviles.myapplication.R
 import kotlinx.android.synthetic.main.activity_membresia.*
 
 class Membresia : AppCompatActivity() {

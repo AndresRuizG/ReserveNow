@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFFDE7"
-    tools:context=".Membresia">
+    tools:context=".User.Membresia">
 
     <ImageView
         android:id="@+id/imageViewelipse"

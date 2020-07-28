@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Membresia_anual"
+    tools:context=".User.Membresia_anual"
     android:background="#FFFDE7">
 
     <ImageView

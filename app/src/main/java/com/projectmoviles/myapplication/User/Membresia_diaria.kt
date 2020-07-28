@@ -1,9 +1,11 @@
-package com.projectmoviles.myapplication
+package com.projectmoviles.myapplication.User
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import com.projectmoviles.myapplication.MENSAJE_COMPRA_PASE_DIARIO
+import com.projectmoviles.myapplication.R
 import kotlinx.android.synthetic.main.activity_membresia_diaria.*
 
 class Membresia_diaria : AppCompatActivity() {
@@ -20,7 +22,8 @@ class Membresia_diaria : AppCompatActivity() {
             startActivity(intent)
         }
         btnComprarDiario.setOnClickListener {
-            Toast.makeText(this, MENSAJE_COMPRA_PASE_DIARIO, Toast.LENGTH_SHORT).show()
+            Toast.makeText(this,
+                MENSAJE_COMPRA_PASE_DIARIO, Toast.LENGTH_SHORT).show()
         }
     }
 }
