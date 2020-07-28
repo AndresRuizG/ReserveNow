@@ -6,9 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/ic_gfondo"
 
-    tools:context=".user.UHistorial3Activity">
-
-
+    tools:context=".User.HistorialUsuarioActivity">
     <ImageButton
         android:id="@+id/btn_homeusuario"
         android:layout_width="wrap_content"
@@ -37,23 +35,22 @@
         android:id="@+id/imageView"
         android:layout_width="250dp"
         android:layout_height="250dp"
-        android:layout_marginEnd="236dp"
-        android:layout_marginBottom="544dp"
+        android:layout_marginEnd="216dp"
+        android:layout_marginBottom="508dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@drawable/ic_group_historial" />
 
     <CalendarView
         android:id="@+id/cal_User"
-        android:layout_width="399dp"
-        android:layout_height="342dp"
+        android:layout_width="349dp"
+        android:layout_height="309dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="52dp"
         android:layout_marginEnd="8dp"
         android:background="#FFFFFF"
         android:backgroundTint="@android:color/background_light"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
@@ -63,7 +60,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginTop="56dp"
-        android:text="@string/txtEntrenamientos"
+        android:text="@string/txtEntrenamiento"
         android:textColor="@color/colorBlack"
 
         app:layout_constraintEnd_toStartOf="@+id/textView15"

@@ -3,8 +3,9 @@ package com.projectmoviles.myapplication.User
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.projectmoviles.myapplication.LoginActivity
 import com.projectmoviles.myapplication.R
-import com.projectmoviles.myapplication.user.UHistorialActivity
+import com.projectmoviles.myapplication.admin.AdminActivity
 import kotlinx.android.synthetic.main.activity_usuario.*
 
 class UsuarioActivity : AppCompatActivity() {
@@ -12,12 +13,24 @@ class UsuarioActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_usuario)
         btn_agendarusuario.setOnClickListener{
-            var intent = Intent(this, UAgendActivity::class.java)
+            var intent = Intent(this, AgendaUsuarioActivity::class.java)
             startActivity(intent)
             finish()
         }
         btn_historialusuario.setOnClickListener{
-            var intent = Intent(this, UHistorialActivity::class.java)
+            var intent = Intent(this, HistorialUsuarioActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
+        btn_mebresiausuario.setOnClickListener{
+
+            var intent = Intent(this, MembresiaUsuarioActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
+        buttonConfig.setOnClickListener{
+
+            var intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
             finish()
         }

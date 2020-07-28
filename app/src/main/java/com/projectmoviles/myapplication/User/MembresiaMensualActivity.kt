@@ -8,20 +8,20 @@ import com.projectmoviles.myapplication.MENSAJE_COMPRA_PASE_MENSUAL
 import com.projectmoviles.myapplication.R
 import kotlinx.android.synthetic.main.activity_membresia_mensual.*
 
-class Membresia_mensual : AppCompatActivity() {
+class MembresiaMensualActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_membresia_mensual)
         btnDerechaMensual.setOnClickListener {
-            intent = Intent(this, Membresia_semestral::class.java)
+            intent = Intent(this, MembresiaSemestralActivity::class.java)
             startActivity(intent)
         }
         btnIzquierdaMensual.setOnClickListener {
-            intent = Intent(this, Membresia_diaria::class.java)
+            intent = Intent(this, MembresiaDiariaActivity::class.java)
             startActivity(intent)
         }
         btnMensualRetornoHomeMembresia.setOnClickListener {
-            intent = Intent(this, Membresia::class.java)
+            intent = Intent(this, MembresiaUsuarioActivity::class.java)
             startActivity(intent)
         }
         btnComprarMensual.setOnClickListener {

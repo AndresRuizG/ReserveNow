@@ -1,28 +1,25 @@
-package com.projectmoviles.myapplication.user
+package com.projectmoviles.myapplication.User
 
 import android.content.Intent
-import android.os.Bundle
-import android.widget.CalendarView.OnDateChangeListener
 import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+import android.widget.CalendarView
 import com.projectmoviles.myapplication.R
-import com.projectmoviles.myapplication.User.UHistorialEntreActivity
-import com.projectmoviles.myapplication.User.UsuarioActivity
-import kotlinx.android.synthetic.main.activity_u_historial3.*
+import kotlinx.android.synthetic.main.activity_historial_usuario.*
 import kotlinx.android.synthetic.main.activity_usuario.btn_homeusuario
 
-
-class UHistorial3Activity : AppCompatActivity() {
+class HistorialUsuarioActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_u_historial)
+        setContentView(R.layout.activity_historial_usuario)
         btn_homeusuario.setOnClickListener{
             var intent = Intent(this, UsuarioActivity::class.java)
             startActivity(intent)
             finish()
         }
-        cal_User.setOnDateChangeListener(OnDateChangeListener { view, year, month, dayOfMonth ->
+        cal_User.setOnDateChangeListener(CalendarView.OnDateChangeListener { view, year, month, dayOfMonth ->
 
-                var intent = Intent(this, UHistorialEntreActivity::class.java)
+            var intent = Intent(this, UHistorialEntreActivity::class.java)
 
             intent.putExtra("godina", year)
             intent.putExtra("mesec", month)
@@ -30,8 +27,6 @@ class UHistorial3Activity : AppCompatActivity() {
             startActivity(intent)
             finish()
         })
-
     }
-
 
 }

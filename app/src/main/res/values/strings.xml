@@ -72,6 +72,13 @@
     <string name="txtEtiqueta">Etiqueta</string>
 
     <string name="SelectDia">Seleccione un dia</string>
+    <string name="txtEntrenamiento">Entrenamiento</string>
+    <string name="txtKcal">Kcal</string>
+    <string name="txtTiempo">Horas Entrenamiento</string>
+    <string name="txtSemana">Semana 1</string>
+    <string name="txtContadorEntrenamientos">2</string>
+    <string name="txtAvancesHistorial">Pecho</string>
+    <string name="txtScore">Score</string>
 
 
     <string-array name="spinner_dias">

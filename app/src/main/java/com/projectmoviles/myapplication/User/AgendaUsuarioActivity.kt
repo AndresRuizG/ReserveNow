@@ -4,22 +4,20 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.projectmoviles.myapplication.R
-import com.projectmoviles.myapplication.user.UAgenAgregarActivity
-import kotlinx.android.synthetic.main.activity_u_agend.*
-import kotlinx.android.synthetic.main.activity_u_agend.btn_homeusuario
-import kotlinx.android.synthetic.main.activity_u_historial3.*
+import kotlinx.android.synthetic.main.activity_agenda_usuario.*
 
-class UAgendActivity : AppCompatActivity() {
+
+class AgendaUsuarioActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_u_agend)
+        setContentView(R.layout.activity_agenda_usuario)
         btn_homeusuario.setOnClickListener{
             var intent = Intent(this, UsuarioActivity::class.java)
             startActivity(intent)
             finish()
         }
         btn_addhorariousuario.setOnClickListener{
-            var intent = Intent(this, UAgenAgregarActivity::class.java)
+            var intent = Intent(this, UsuarioAgregarAgendaActivity::class.java)
             startActivity(intent)
             finish()
         }

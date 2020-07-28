@@ -9,18 +9,18 @@ import com.projectmoviles.myapplication.R
 import kotlinx.android.synthetic.main.activity_membresia_anual.*
 import kotlinx.android.synthetic.main.activity_membresia_mensual.*
 
-class Membresia_anual : AppCompatActivity() {
+class MembresiaAnualActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_membresia_anual)
 
 
         btnIzquierdaMensual.setOnClickListener {
-            intent = Intent(this, Membresia_semestral::class.java)
+            intent = Intent(this, MembresiaSemestralActivity::class.java)
             startActivity(intent)
         }
         btnAnualRetornoHomeMembresia.setOnClickListener {
-            intent = Intent(this, Membresia::class.java)
+            intent = Intent(this, MembresiaUsuarioActivity::class.java)
             startActivity(intent)
         }
         btnComprarAnual.setOnClickListener {

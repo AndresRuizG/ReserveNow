@@ -3,6 +3,7 @@ package com.projectmoviles.myapplication.admin
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.projectmoviles.myapplication.LoginActivity
 import com.projectmoviles.myapplication.R
 import kotlinx.android.synthetic.main.activity_homecoach.*
 
@@ -22,6 +23,11 @@ class AdminActivity : AppCompatActivity() {
         }
         btn_historial.setOnClickListener{
             var intent = Intent(this,HorariosActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
+        btn_configuracion.setOnClickListener{
+            var intent = Intent(this,LoginActivity::class.java)
             startActivity(intent)
             finish()
         }

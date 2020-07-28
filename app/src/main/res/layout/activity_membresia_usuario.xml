@@ -4,15 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFDE7"
-    tools:context=".User.Membresia">
+    android:background="@drawable/ic_gfondo"
+    tools:context=".User.MembresiaUsuarioActivity">
 
     <ImageView
         android:id="@+id/imageViewelipse"
         android:layout_width="244dp"
         android:layout_height="235dp"
-        android:layout_marginEnd="240dp"
-        android:layout_marginBottom="40dp"
+        android:layout_marginEnd="192dp"
+        android:layout_marginBottom="8dp"
         android:contentDescription="@string/elipse"
         app:layout_constraintBottom_toTopOf="@+id/imageView10"
         app:layout_constraintEnd_toEndOf="parent"
@@ -178,13 +178,16 @@
         android:id="@+id/imageView9"
         android:layout_width="81dp"
         android:layout_height="67dp"
-        android:layout_marginBottom="88dp"
+        android:layout_marginBottom="48dp"
         android:contentDescription="@string/caledario"
         app:layout_constraintBottom_toBottomOf="@+id/imageViewelipse"
         app:layout_constraintEnd_toEndOf="@+id/imageViewelipse"
-        app:layout_constraintHorizontal_bias="0.183"
+        app:layout_constraintHorizontal_bias="0.323"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnHomeMembresiaDatos"
+        app:layout_constraintVertical_bias="0.76"
         app:srcCompat="@drawable/ic_calendar" />
+
     <TextView
         android:id="@+id/textView11"
         android:layout_width="wrap_content"
@@ -203,14 +206,15 @@
         android:id="@+id/btnHomeMembresiaDatos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
+        android:layout_marginStart="36dp"
         android:background="#00FFFFFF"
+        android:contentDescription="@string/home_icono"
         android:scaleType="fitXY"
         app:layout_constraintBottom_toBottomOf="@+id/imageView11"
         app:layout_constraintStart_toStartOf="@+id/imageView11"
         app:layout_constraintTop_toTopOf="@+id/imageView11"
-        app:srcCompat="@drawable/ic_home_icon"
-        android:contentDescription="@string/home_icono" />
+        app:layout_constraintVertical_bias="0.551"
+        app:srcCompat="@drawable/ic_home_icon" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

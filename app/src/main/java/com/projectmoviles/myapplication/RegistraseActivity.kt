@@ -1,23 +1,16 @@
 package com.projectmoviles.myapplication
 
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Patterns
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_login.*
 import kotlinx.android.synthetic.main.activity_registrarse.*
-import kotlinx.android.synthetic.main.activity_registrarse.btnInicio
 
-class Registrarse : AppCompatActivity() {
+class RegistraseActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_registrarse)
-        btnInicio.setOnClickListener {
-            val intent=Intent(this, Login::class.java)
-            startActivity(intent)
-        }
-
         btnRegistrarDatos.setOnClickListener {
             NOMBRRE_USUARIO = editTextPersonName.text.toString();
             CORREO = editTextEmailAddress.getText().toString();
@@ -38,6 +31,6 @@ class Registrarse : AppCompatActivity() {
                 editTextPasswordConfirm.setError(MENSAJE_ERROR_CONTRASENIAS_IGUALES);
             }
         }
-
     }
+
 }

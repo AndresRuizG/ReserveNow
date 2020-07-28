@@ -13,15 +13,22 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".UHistorialActivity"></activity>
-        <activity android:name=".User.UHistorialEntreActivity" />
-        <activity android:name=".User.UAgendActivity" />
+        <activity android:name=".RegistraseActivity"></activity>
+        <activity android:name=".User.UsuarioActivity" />
+        <activity android:name=".User.MembresiaAnualActivity" />
+        <activity android:name=".User.MembresiaSemestralActivity" />
+        <activity android:name=".User.MembresiaMensualActivity" />
+        <activity android:name=".User.MembresiaDiariaActivity" />
+        <activity android:name=".User.MembresiaUsuarioActivity" />
+        <activity android:name=".User.HistorialUsuarioActivity" />
+        <activity android:name=".User.UsuarioAgregarAgendaActivity" />
+        <activity android:name=".User.AgendaUsuarioActivity" />
         <activity android:name=".admin.AgendaActivity" />
         <activity android:name=".admin.AgregarHorarioActivity" />
         <activity android:name=".admin.HorariosActivity" />
         <activity android:name=".admin.AdminActivity" />
-        <activity android:name=".User.UHistorialActivity" />
-        <activity android:name=".User.UsuarioActivity">
+        <activity android:name=".User.UHistorialEntreActivity" />
+        <activity android:name=".LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

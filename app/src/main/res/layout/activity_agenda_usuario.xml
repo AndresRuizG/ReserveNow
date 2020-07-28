@@ -6,8 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/ic_gfondo"
 
-    tools:context=".user.UAgendActivity">
-
+    tools:context=".User.AgendaUsuarioActivity">
     <ImageButton
         android:id="@+id/btn_homeusuario"
         android:layout_width="wrap_content"
@@ -25,8 +24,8 @@
         android:id="@+id/imageAgendaG"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="260dp"
-        android:layout_marginBottom="536dp"
+        android:layout_marginEnd="224dp"
+        android:layout_marginBottom="512dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@drawable/gagendar" />
@@ -56,14 +55,14 @@
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="407dp"
-        android:layout_height="380dp"
+        android:layout_width="341dp"
+        android:layout_height="331dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.618">
+        app:layout_constraintTop_toBottomOf="@+id/imageAgendaG"
+        app:layout_constraintVertical_bias="0.143">
 
         <TextView
             android:id="@+id/textView5"
