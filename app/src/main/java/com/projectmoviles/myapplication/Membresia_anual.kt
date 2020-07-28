@@ -14,15 +14,15 @@ class Membresia_anual : AppCompatActivity() {
 
 
         btnIzquierdaMensual.setOnClickListener {
-            val intent = Intent(this, Membresia_semestral::class.java)
+            intent = Intent(this, Membresia_semestral::class.java)
             startActivity(intent)
         }
         btnAnualRetornoHomeMembresia.setOnClickListener {
-            val intent = Intent(this, Membresia::class.java)
+            intent = Intent(this, Membresia::class.java)
             startActivity(intent)
         }
         btnComprarAnual.setOnClickListener {
-            Toast.makeText(this, "Usted ha comprado un pase anual", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, MENSAJE_COMPRA_PASE_ANUAL, Toast.LENGTH_SHORT).show()
         }
     }
 }

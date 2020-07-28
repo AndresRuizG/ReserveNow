@@ -19,23 +19,23 @@ class Registrarse : AppCompatActivity() {
         }
 
         btnRegistrarDatos.setOnClickListener {
-            var nombreUser = editTextPersonName.text.toString();
-            var correo = editTextEmailAddress.getText().toString();
-            var pass = editTextPassword.text.toString();
-            var confirmepass= editTextPasswordConfirm.text.toString();
+            NOMBRRE_USUARIO = editTextPersonName.text.toString();
+            CORREO = editTextEmailAddress.getText().toString();
+            CONTRASENIA = editTextPassword.text.toString();
+            CONFIRMAR_CONTRASENIA= editTextPasswordConfirm.text.toString();
 
-            if (!nombreUser.isEmpty() && !correo.isEmpty() && Patterns.EMAIL_ADDRESS.matcher(correo).matches() &&
-                !pass.isEmpty() && pass.length >= 8 && pass==confirmepass) {
-                Toast.makeText(this, "Bienvenido", Toast.LENGTH_SHORT).show()
+            if (!NOMBRRE_USUARIO.isEmpty() && !CORREO.isEmpty() && Patterns.EMAIL_ADDRESS.matcher(CORREO).matches() &&
+                !CONTRASENIA.isEmpty() && CONTRASENIA.length >= 8 && CONTRASENIA==CONFIRMAR_CONTRASENIA) {
+                Toast.makeText(this, MENSAJE_BIENVEINDA, Toast.LENGTH_SHORT).show()
             }
-            if (correo.isEmpty() || !Patterns.EMAIL_ADDRESS.matcher(correo).matches()) {
-                editTextEmailAddress.setError("Ingrese un correo electónico valido")
+            if (CORREO.isEmpty() || !Patterns.EMAIL_ADDRESS.matcher(CORREO).matches()) {
+                editTextEmailAddress.setError(MENSAJE_ERROR_CORREO)
             }
-            if (pass.isEmpty() || pass.length < 8) {
-                editTextPassword.setError("Ingrese una contraseña que tenga almenos 8 caracteres")
+            if (CONTRASENIA.isEmpty() || CONTRASENIA.length < 8) {
+                editTextPassword.setError(MENSAJE_ERROR_CONTRASENIA)
             }
-            if(confirmepass!=pass){
-                editTextPasswordConfirm.setError("Las contraseñas no coinciden");
+            if(CONFIRMAR_CONTRASENIA!=CONTRASENIA){
+                editTextPasswordConfirm.setError(MENSAJE_ERROR_CONTRASENIAS_IGUALES);
             }
         }
 
