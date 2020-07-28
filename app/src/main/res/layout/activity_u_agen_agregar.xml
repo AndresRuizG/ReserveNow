@@ -8,8 +8,92 @@
 
     tools:context=".user.UAgenAgregarActivity">
 
+    <TextView
+        android:id="@+id/textViewAgenda2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto"
+        android:text="@string/txtAgendar"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/calendarAgenda"
+        app:layout_constraintStart_toEndOf="@+id/btn_atrasagendausuario"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_checkhorario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/ic_btncheck"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <Button
+        android:id="@+id/btn_cancelhorario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_btncancel"
+        app:layout_constraintEnd_toStartOf="@+id/btn_checkhorario"
+        app:layout_constraintHorizontal_bias="0.256"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout"
+        app:layout_constraintTop_toTopOf="@+id/btn_checkhorario" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="403dp"
+        android:layout_height="241dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calendarAgenda"
+        app:layout_constraintVertical_bias="0.084">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_imgreloj"
+            android:fontFamily="@font/roboto"
+            android:text="Informacion usuario agenda" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_imgreloj"
+            android:fontFamily="@font/roboto"
+            android:text="Informacion usuario agenda" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_imgreloj"
+            android:fontFamily="@font/roboto"
+            android:text="Informacion usuario agenda" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_imgreloj"
+            android:fontFamily="@font/roboto"
+            android:text="Informacion usuario agenda" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_imgreloj"
+            android:fontFamily="@font/roboto"
+            android:text="Informacion usuario agenda" />
+
+    </LinearLayout>
+
     <ImageButton
-        android:id="@+id/buttonAtras"
+        android:id="@+id/btn_atrasagendausuario"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
@@ -22,18 +106,6 @@
         app:srcCompat="@drawable/back" />
 
 
-    <Button
-        android:id="@+id/buttonAgregar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="680dp"
-        android:backgroundTint="#FBD46D"
-        android:fontFamily="@font/roboto"
-        android:text="Agregar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <CalendarView
         android:id="@+id/calendarAgenda"
         android:layout_width="406dp"
@@ -44,14 +116,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <ListView
-        android:id="@+id/listViewHorario"
-        android:layout_width="409dp"
-        android:layout_height="318dp"
-        android:layout_marginTop="1dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/calendarAgenda"
-        app:layout_constraintTop_toBottomOf="@+id/calendarAgenda" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

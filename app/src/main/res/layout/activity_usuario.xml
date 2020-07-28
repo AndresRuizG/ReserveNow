@@ -8,8 +8,81 @@
 
     tools:context=".user.UsuarioActivity">
 
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="292dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_imgpesa" />
+
+    <Button
+        android:id="@+id/btn_historialusuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/ic_btnhistorial"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtHistorial2"
+        android:layout_width="56dp"
+        android:layout_height="17dp"
+        android:text="@string/txtHistorial"
+        android:textColor="@color/colorBlack"
+        app:layout_constraintEnd_toEndOf="@+id/btn_historialusuario"
+        app:layout_constraintStart_toStartOf="@+id/btn_historialusuario"
+        app:layout_constraintTop_toBottomOf="@+id/btn_historialusuario" />
+
+    <TextView
+        android:id="@+id/txtAgendar2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtAgendar"
+        android:textColor="@color/colorBlack"
+        app:layout_constraintEnd_toEndOf="@+id/btn_agendarusuario"
+        app:layout_constraintStart_toStartOf="@+id/btn_agendarusuario"
+        app:layout_constraintTop_toBottomOf="@+id/btn_agendarusuario" />
+
+    <Button
+        android:id="@+id/btn_agendarusuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/ic_btnagendar"
+        app:layout_constraintBottom_toTopOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_mebresiausuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/ic_btnmembresia"
+        app:layout_constraintEnd_toStartOf="@+id/imageView2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtAdminDeportsita2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtMembresia"
+        android:textColor="@color/colorBlack"
+        app:layout_constraintEnd_toEndOf="@+id/btn_mebresiausuario"
+        app:layout_constraintStart_toStartOf="@+id/btn_mebresiausuario"
+        app:layout_constraintTop_toBottomOf="@+id/btn_mebresiausuario" />
+
     <ImageButton
-        android:id="@+id/buttonHome"
+        android:id="@+id/btn_homeusuario"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
@@ -30,57 +103,9 @@
         android:layout_marginEnd="10dp"
         android:backgroundTint="#FBD46D"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/buttonHome"
+        app:layout_constraintStart_toEndOf="@+id/btn_homeusuario"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/iconopciones" />
-
-    <ImageView
-        android:id="@+id/imagePesa"
-        android:layout_width="180dp"
-        android:layout_height="180dp"
-        android:layout_marginStart="1dp"
-        android:layout_marginTop="110dp"
-        android:layout_marginEnd="1dp"
-        app:layout_constraintEnd_toEndOf="@+id/imageHist"
-        app:layout_constraintStart_toStartOf="@+id/imageMem"
-        app:layout_constraintTop_toBottomOf="@+id/imageAge"
-        app:srcCompat="@drawable/iconpesa" />
-
-    <ImageView
-        android:id="@+id/imageAge"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="149dp"
-        android:layout_marginTop="130dp"
-        android:layout_marginEnd="149dp"
-        android:onClick="onClickAgenda"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/iconagendar" />
-
-    <ImageView
-        android:id="@+id/imageMem"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="280dp"
-        app:layout_constraintEnd_toEndOf="@+id/imageAge"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="@+id/imageAge"
-        app:layout_constraintTop_toBottomOf="@+id/imageAge"
-        app:srcCompat="@drawable/iconmembresia" />
-
-    <ImageView
-        android:id="@+id/imageHist"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="280dp"
-        android:layout_marginTop="1dp"
-        android:onClick="onClickHistorial"
-        app:layout_constraintEnd_toEndOf="@+id/imageAge"
-        app:layout_constraintStart_toStartOf="@+id/imageAge"
-        app:layout_constraintTop_toBottomOf="@+id/imageAge"
-        app:srcCompat="@drawable/iconhistorial" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

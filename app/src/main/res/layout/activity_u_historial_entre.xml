@@ -9,7 +9,7 @@
     tools:context=".user.UHistorialEntreActivity">
 
     <ImageButton
-        android:id="@+id/buttonAtras"
+        android:id="@+id/btn_atrasagendausuario"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
@@ -30,30 +30,24 @@
         android:fontFamily="@font/roboto"
         android:text="Historial"
         android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="@+id/buttonAtras"
-        app:layout_constraintStart_toEndOf="@+id/buttonAtras"
-        app:layout_constraintTop_toTopOf="@+id/buttonAtras"/>
+        app:layout_constraintBottom_toBottomOf="@+id/btn_atrasagendausuario"
+        app:layout_constraintStart_toEndOf="@+id/btn_atrasagendausuario"
+        app:layout_constraintTop_toTopOf="@+id/btn_atrasagendausuario"/>
 
-    <View
-        android:id="@+id/viewFecha"
-        android:layout_width="394dp"
-        android:layout_height="131dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="8dp"
-        android:background="#37474F"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonAtras" />
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="85dp"
+        android:layout_height="86dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintStart_toStartOf="@+id/btn_atrasagendausuario"
+        app:layout_constraintTop_toBottomOf="@+id/btn_atrasagendausuario"
+        app:srcCompat="@drawable/ic_imgcal" />
 
-    <ListView
-        android:id="@+id/listViewEntrenamientos"
-        android:layout_width="398dp"
-        android:layout_height="494dp"
-        android:layout_marginTop="16dp"
-        android:background="#FFFFFF"
-        app:layout_constraintEnd_toEndOf="@+id/viewFecha"
-        app:layout_constraintStart_toStartOf="@+id/viewFecha"
-        app:layout_constraintTop_toBottomOf="@+id/viewFecha" />
+    <LinearLayout
+        android:layout_width="395dp"
+        android:layout_height="551dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="172dp"></LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
