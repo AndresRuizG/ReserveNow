@@ -12,19 +12,19 @@ class Membresia_mensual : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_membresia_mensual)
         btnDerechaMensual.setOnClickListener {
-            val intent = Intent(this, Membresia_semestral::class.java)
+            intent = Intent(this, Membresia_semestral::class.java)
             startActivity(intent)
         }
         btnIzquierdaMensual.setOnClickListener {
-            val intent = Intent(this, Membresia_diaria::class.java)
+            intent = Intent(this, Membresia_diaria::class.java)
             startActivity(intent)
         }
         btnMensualRetornoHomeMembresia.setOnClickListener {
-            val intent = Intent(this, Membresia::class.java)
+            intent = Intent(this, Membresia::class.java)
             startActivity(intent)
         }
         btnComprarMensual.setOnClickListener {
-            Toast.makeText(this, "Usted ha comprado un pase mensual", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, MENSAJE_COMPRA_PASE_MENSUAL, Toast.LENGTH_SHORT).show()
         }
     }
 }

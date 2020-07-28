@@ -17,18 +17,18 @@ class Login : AppCompatActivity() {
             startActivity(intent)
         }
         btnInicio.setOnClickListener {
-            var correo = editTextEmailAddress.getText().toString();
-            var pass = editTextPassword.text.toString();
-            if (!correo.isEmpty() && Patterns.EMAIL_ADDRESS.matcher(correo).matches() &&
-                !pass.isEmpty() && pass.length >= 8
+            CORREO= editTextEmailAddress.getText().toString();
+            CONTRASENIA = editTextPassword.text.toString();
+            if (!CORREO.isEmpty() && Patterns.EMAIL_ADDRESS.matcher(CORREO).matches() &&
+                !CONTRASENIA.isEmpty() && CONTRASENIA.length >= 8
             ) {
-                Toast.makeText(this, "Bienvenido", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, MENSAJE_BIENVEINDA, Toast.LENGTH_SHORT).show()
             }
-            if (correo.isEmpty() || !Patterns.EMAIL_ADDRESS.matcher(correo).matches()) {
-                editTextEmailAddress.setError("Ingrese un correo electónico valido")
+            if (CORREO.isEmpty() || !Patterns.EMAIL_ADDRESS.matcher(CORREO).matches()) {
+                editTextEmailAddress.setError(MENSAJE_ERROR_CORREO)
             }
-            if (pass.isEmpty() || pass.length < 8) {
-                editTextPassword.setError("Ingrese una contraseña que tenga almenos 8 caracteres")
+            if (CONTRASENIA.isEmpty() || CONTRASENIA.length < 8) {
+                editTextPassword.setError(MENSAJE_ERROR_CONTRASENIA)
             }
 
 
