@@ -52,7 +52,7 @@
         app:layout_constraintTop_toTopOf="@+id/imageView10" />
 
     <CalendarView
-        android:id="@+id/calendarView"
+        android:id="@+id/cal_User"
         android:layout_width="392dp"
         android:layout_height="366dp"
         app:layout_constraintEnd_toEndOf="parent"

@@ -17,7 +17,7 @@
     <string name="txtEtiqueta">Etiqueta</string>
     <string name="SelectDia">Seleccione un dia</string>
     <string name="txtEntrenamientos">Entrenamientos</string>
-    <string name="txtKcal" >Kcal</string>
+    <string name="txtKcal">Kcal</string>
     <string name="txtTiempo">Tiempo (min)</string>
     <string name="txtSemana">"Semana "</string>
     <string name="txtContadorEntrenamientos">"Tiempo Entrenamientos"</string>

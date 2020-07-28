@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/ic_gfondo"
 
-    tools:context=".user.UAgenActivity">
+    tools:context=".user.UAgendActivity">
 
     <ImageButton
         android:id="@+id/btn_homeusuario"

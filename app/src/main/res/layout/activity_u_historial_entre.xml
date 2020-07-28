@@ -6,48 +6,50 @@
     android:layout_height="match_parent"
     android:background="@drawable/ic_gfondo"
 
-    tools:context=".user.UHistorialEntreActivity">
-
-    <ImageButton
-        android:id="@+id/btn_atrasagendausuario"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="1dp"
-        android:layout_marginEnd="347dp"
-        android:backgroundTint="#FBD46D"
-        android:onClick="onClickAtras"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/back" />
+    tools:context=".User.UHistorialEntreActivity">
 
     <TextView
         android:id="@+id/textViewHistorial"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="5dp"
+        android:layout_marginStart="20dp"
         android:fontFamily="@font/roboto"
         android:text="Historial"
         android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="@+id/btn_atrasagendausuario"
-        app:layout_constraintStart_toEndOf="@+id/btn_atrasagendausuario"
-        app:layout_constraintTop_toTopOf="@+id/btn_atrasagendausuario"/>
+        app:layout_constraintBottom_toBottomOf="@+id/btn_back"
+        app:layout_constraintStart_toEndOf="@+id/btn_back"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.666" />
 
     <ImageView
         android:id="@+id/imageView14"
         android:layout_width="85dp"
         android:layout_height="86dp"
-        android:layout_marginTop="28dp"
-        app:layout_constraintStart_toStartOf="@+id/btn_atrasagendausuario"
-        app:layout_constraintTop_toBottomOf="@+id/btn_atrasagendausuario"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="@+id/textViewHistorial"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_back"
         app:srcCompat="@drawable/ic_imgcal" />
 
-    <LinearLayout
-        android:layout_width="395dp"
-        android:layout_height="551dp"
-        android:orientation="vertical"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="172dp"></LinearLayout>
+    <ListView
+        android:layout_width="382dp"
+        android:layout_height="524dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView14"
+        />
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="37dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
