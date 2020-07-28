@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="false"
         android:theme="@style/AppTheme">
+
         <activity android:name=".Membresia_anual"></activity>
         <activity android:name=".Membresia_semestral" />
         <activity android:name=".Membresia_mensual" />
@@ -25,6 +26,7 @@
         <activity
             android:name=".Login"
             android:theme="@style/Theme.AppCompat.NoActionBar">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
