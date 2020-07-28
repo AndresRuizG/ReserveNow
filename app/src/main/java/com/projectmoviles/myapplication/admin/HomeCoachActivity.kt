@@ -10,7 +10,11 @@ class HomeCoachActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_homecoach)
-
+        btn_home.setOnClickListener{
+            var intent = Intent(this,HomeCoachActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
         btn_administrar.setOnClickListener{
             var intent = Intent(this,AdminActivity::class.java)
             startActivity(intent)

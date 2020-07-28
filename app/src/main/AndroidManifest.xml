@@ -16,9 +16,19 @@
         <activity android:name=".admin.AgendaActivity"></activity>
         <activity android:name=".admin.AgregarHorarioActivity" />
         <activity android:name=".admin.HorariosActivity" />
-        <activity android:name=".AdminhorariosActivity" />
         <activity android:name=".admin.AdminActivity" />
+        <activity android:name=".user.UHistorialEntreActivity"/>
 
+        <activity android:name=".user.UAgenAgregarActivity"/>
+
+        <activity android:name=".user.UHistorialActivity"/>
+
+
+        <activity android:name=".user.UsuarioActivity">   <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter> </activity>
         <meta-data
             android:name="com.google.android.wearable.standalone"
             android:value="true" />
@@ -27,11 +37,7 @@
             android:resource="@array/preloaded_fonts" />
 
         <activity android:name=".admin.HomeCoachActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
     </application>
 
