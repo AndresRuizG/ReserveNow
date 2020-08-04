@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_gfondo"
+    tools:context=".admin.HomeCoachActivity">
+
+    <Button
+        android:id="@+id/btn_agendarusuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/ic_btnagendar"
+        app:layout_constraintBottom_toTopOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_admindeportista"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/ic_btnmembresia"
+        app:layout_constraintEnd_toStartOf="@+id/imageView2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="292dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_imgpesa" />
+
+    <Button
+        android:id="@+id/btn_historial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/ic_btnhistorial"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtAdminDeportsita"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/txtMembresia"
+        android:textColor="@color/colorBlack"
+        app:layout_constraintEnd_toEndOf="@+id/btn_admindeportista"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_admindeportista" />
+
+    <TextView
+        android:id="@+id/txtAdministrador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtAdministrar"
+        android:textColor="@color/colorBlack"
+        app:layout_constraintEnd_toEndOf="@+id/btn_administrar"
+        app:layout_constraintStart_toStartOf="@+id/btn_administrar"
+        app:layout_constraintTop_toBottomOf="@+id/btn_administrar" />
+
+    <TextView
+        android:id="@+id/txtAgendar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/txtAgendar"
+        android:textColor="@color/colorBlack"
+        app:layout_constraintEnd_toEndOf="@+id/btn_agendarusuario"
+        app:layout_constraintStart_toStartOf="@+id/btn_agendarusuario"
+        app:layout_constraintTop_toBottomOf="@+id/btn_agendarusuario" />
+
+    <TextView
+        android:id="@+id/txtHistorial"
+        android:layout_width="56dp"
+        android:layout_height="17dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/txtHistorial"
+        android:textColor="@color/colorBlack"
+        app:layout_constraintEnd_toEndOf="@+id/btn_historial"
+        app:layout_constraintStart_toStartOf="@+id/btn_historial"
+        app:layout_constraintTop_toBottomOf="@+id/btn_historial" />
+
+    <Button
+        android:id="@+id/btn_administrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_btncoach"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btn_agendarusuario"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btn_agendarusuario"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.264" />
+
+    <Button
+        android:id="@+id/btn_home"
+        android:layout_width="62dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/ic_btnhomecoach"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_configuracion"
+        android:layout_width="62dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/ic_btnconfigcoach"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.947"
+        app:layout_constraintStart_toEndOf="@+id/btn_home"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
