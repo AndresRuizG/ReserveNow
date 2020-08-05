@@ -37,7 +37,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_imgpesa" />
+        app:srcCompat="@drawable/ic_imgpesa"
+        android:contentDescription="@string/imagen_pesa" />
 
     <Button
         android:id="@+id/btn_historial"
@@ -107,25 +108,33 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView2"
         app:layout_constraintVertical_bias="0.264" />
 
-    <Button
-        android:id="@+id/btn_home"
-        android:layout_width="62dp"
-        android:layout_height="46dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="4dp"
-        android:background="@drawable/ic_btnhomecoach"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
+    <ImageButton
+        android:id="@+id/btn_home"
+        android:layout_width="44dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="347dp"
+        android:backgroundTint="#FBD46D"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_btnhomecoach"
+        android:contentDescription="@string/btn_home" />
+
+    <ImageButton
         android:id="@+id/btn_configuracion"
         android:layout_width="62dp"
         android:layout_height="46dp"
         android:layout_marginTop="4dp"
-        android:background="@drawable/ic_btnconfigcoach"
+        android:backgroundTint="#00FFFEFC"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.947"
         app:layout_constraintStart_toEndOf="@+id/btn_home"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/iconopciones"
+        android:contentDescription="@string/adm_home_btn_opciones" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

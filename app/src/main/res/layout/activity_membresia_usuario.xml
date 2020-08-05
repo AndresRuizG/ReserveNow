@@ -192,7 +192,8 @@
         android:id="@+id/textView11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
         android:layout_marginEnd="216dp"
         android:fontFamily="sans-serif"
         android:text="@string/membresia"
@@ -206,7 +207,7 @@
         android:id="@+id/btnHomeMembresiaDatos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
+        android:layout_marginStart="24dp"
         android:background="#00FFFFFF"
         android:contentDescription="@string/home_icono"
         android:scaleType="fitXY"
@@ -214,7 +215,7 @@
         app:layout_constraintStart_toStartOf="@+id/imageView11"
         app:layout_constraintTop_toTopOf="@+id/imageView11"
         app:layout_constraintVertical_bias="0.551"
-        app:srcCompat="@drawable/ic_home_icon" />
+        app:srcCompat="@drawable/back" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

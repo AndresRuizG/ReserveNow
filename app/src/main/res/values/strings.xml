@@ -79,6 +79,19 @@
     <string name="txtContadorEntrenamientos">2</string>
     <string name="txtAvancesHistorial">Pecho</string>
     <string name="txtScore">Score</string>
+    <string name="adm_home_btn_opciones">TODO</string>
+    <string name="btn_home">TODO</string>
+    <string name="imagen_pesa">TODO</string>
+    <string name="btn_opciones">TODO</string>
+    <string name="check_adicional">Adicional</string>
+    <string name="adicional">Adicional</string>
+    <string name="text_comentario">Comentario</string>
+    <string name="text_m_quinas">Máquinas</string>
+    <string name="btn_regresar">TODO</string>
+    <string name="imagen_reloj">TODO</string>
+    <string name="imagen_linea">TODO</string>
+    <string name="imagen_etiqueta">TODO</string>
+    <string name="imagen_agenda">TODO</string>
 
 
     <string-array name="spinner_dias">

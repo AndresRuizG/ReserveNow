@@ -11,61 +11,58 @@
 
     <ImageView
         android:id="@+id/imageView11"
-        android:layout_width="301dp"
-        android:layout_height="32dp"
-        app:layout_constraintEnd_toEndOf="@+id/btn_configuracion2"
+        android:layout_width="264dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/spn_dias"
         app:layout_constraintTop_toBottomOf="@+id/spn_dias"
         app:srcCompat="@drawable/ic_rectangle" />
 
     <ImageView
         android:id="@+id/imageView12"
-        android:layout_width="301dp"
+        android:layout_width="263dp"
         android:layout_height="32dp"
-        app:layout_constraintStart_toStartOf="@+id/spn_dias"
-        app:layout_constraintTop_toBottomOf="@+id/txtHoraInicial2"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.415"
+        app:layout_constraintStart_toEndOf="@+id/txtHoraInicial2"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
         app:srcCompat="@drawable/ic_rectangle" />
 
     <Button
         android:id="@+id/btn_home"
-        android:layout_width="62dp"
-        android:layout_height="46dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="4dp"
-        android:background="@drawable/ic_btnhomecoach"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/btn_configuracion2"
-        android:layout_width="62dp"
-        android:layout_height="46dp"
-        android:layout_marginTop="4dp"
-        android:background="@drawable/ic_btnconfigcoach"
+        android:layout_width="38dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/back"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.947"
-        app:layout_constraintStart_toEndOf="@+id/btn_home"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="292dp"
+        android:layout_marginTop="84dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView12"
         app:srcCompat="@drawable/ic_imgpesa" />
 
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="55dp"
         android:layout_height="52dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="56dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="89dp"
         app:layout_constraintEnd_toEndOf="@+id/btn_home"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_home"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_imgcal" />
 
     <Spinner
@@ -76,6 +73,7 @@
         android:entries="@array/spinner_dias"
         app:layout_constraintBottom_toBottomOf="@+id/imageView3"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/textView3"
         app:layout_constraintTop_toTopOf="@+id/imageView3"
         app:layout_constraintVertical_bias="0.708" />
@@ -84,38 +82,34 @@
         android:id="@+id/txtHoraInicial"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="44dp"
+
         android:text="7:00"
 
         android:textColor="@color/colorBlack"
-
-        app:layout_constraintEnd_toStartOf="@+id/spn_dias"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/imageView3"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView11"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
     <TextView
         android:id="@+id/txtHoraInicial2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="52dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginStart="24dp"
+
+        android:layout_marginTop="68dp"
 
         android:text="20:00"
-
         android:textColor="@color/colorBlack"
-        app:layout_constraintEnd_toStartOf="@+id/spn_dias"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/imageView3"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView12"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtHoraInicial" />
 
     <Button
         android:id="@+id/btn_agregar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="81dp"
+        android:layout_height="77dp"
         android:layout_marginBottom="48dp"
         android:background="@drawable/ic_btnadd"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -125,16 +119,14 @@
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="266dp"
-        android:layout_height="75dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="12dp"
-        android:layout_marginBottom="8dp"
+        android:layout_width="263dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="16dp"
         android:text="+13 Horas disponibles"
         android:textColor="@color/colorBlack"
-        app:layout_constraintBottom_toBottomOf="@+id/txtHoraInicial2"
-        app:layout_constraintEnd_toEndOf="@+id/btn_configuracion2"
-        app:layout_constraintTop_toTopOf="@+id/txtHoraInicial"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.415"
+        app:layout_constraintStart_toEndOf="@+id/txtHoraInicial2"
+        app:layout_constraintTop_toBottomOf="@+id/imageView11" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
