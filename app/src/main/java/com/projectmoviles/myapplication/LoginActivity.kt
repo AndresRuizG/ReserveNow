@@ -35,11 +35,11 @@ class LoginActivity : AppCompatActivity() {
 
     i
 */
-            if(editTextEmailAddress.text.toString().equals("andres.ruiz@epn.edu.ec") and editTextPassword.text.toString().equals("12345678")){
+            if(editTextEmailAddress.text.toString().equals("jorge") and editTextPassword.text.toString().equals("12345678")){
                 var intent = Intent(this, UsuarioActivity::class.java)
                 startActivity(intent)
                 finish()
-            }else if(editTextEmailAddress.text.toString().equals("jorge.quilumba@epn.edu.ec") and editTextPassword.text.toString().equals("12345678")){
+            }else if(editTextEmailAddress.text.toString().equals("luis") and editTextPassword.text.toString().equals("12345678")){
                 var intent = Intent(this, AdminActivity::class.java)
                 startActivity(intent)
                 finish()

@@ -210,8 +210,8 @@
 
     <ImageButton
         android:id="@+id/btnMensualRetornoHomeMembresia"
-        android:layout_width="38dp"
-        android:layout_height="35dp"
+        android:layout_width="29dp"
+        android:layout_height="32dp"
         android:layout_marginStart="24dp"
         android:background="#00FFFFFF"
         android:contentDescription="@string/home_icono"

@@ -7,6 +7,16 @@
     android:background="@drawable/ic_gfondo"
 
     tools:context=".User.HistorialUsuarioActivity">
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginEnd="216dp"
+        android:layout_marginBottom="508dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_group_historial" />
+
     <ImageButton
         android:id="@+id/btn_homeusuario"
         android:layout_width="wrap_content"
@@ -18,7 +28,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/iconhome" />
+        app:srcCompat="@drawable/back" />
 
     <TextView
         android:id="@+id/textViewHistorial"
@@ -31,15 +41,6 @@
         app:layout_constraintStart_toEndOf="@+id/btn_homeusuario"
         app:layout_constraintTop_toTopOf="@+id/btn_homeusuario"/>
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="250dp"
-        android:layout_height="250dp"
-        android:layout_marginEnd="216dp"
-        android:layout_marginBottom="508dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/ic_group_historial" />
 
     <CalendarView
         android:id="@+id/cal_User"

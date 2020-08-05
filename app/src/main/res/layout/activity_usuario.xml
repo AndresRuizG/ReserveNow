@@ -83,9 +83,9 @@
 
     <ImageButton
         android:id="@+id/btn_homeusuario"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
+        android:layout_width="44dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="1dp"
         android:layout_marginEnd="347dp"
         android:backgroundTint="#FBD46D"
