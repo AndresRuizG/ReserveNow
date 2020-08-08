@@ -79,18 +79,5 @@
     <clip-path
         android:pathData="M0,0h113v113h-113zM27,13h60v60h-60z"/>
   </group>
-  <path
-      android:pathData="M4,54.5a52.5,52.5 0,1 0,105 0a52.5,52.5 0,1 0,-105 0z"
-      android:strokeWidth="3"
-      android:fillColor="#000000"
-      android:fillAlpha="0"
-      android:strokeColor="#000000"/>
-  <path
-      android:fillColor="#FF000000"
-      android:pathData="M4,54.5a52.5,52.5 0,1 0,105 0a52.5,52.5 0,1 0,-105 0z"
-      android:strokeLineJoin="miter"
-      android:strokeWidth="6"
-      android:fillAlpha="0"
-      android:strokeColor="#FBD46D"
-      android:strokeLineCap="butt"/>
+
 </vector>
