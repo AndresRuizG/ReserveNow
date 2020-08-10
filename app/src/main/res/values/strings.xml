@@ -92,7 +92,12 @@
     <string name="imagen_linea">TODO</string>
     <string name="imagen_etiqueta">TODO</string>
     <string name="imagen_agenda">TODO</string>
+    <string name="textViewReserveNow">ReserveNow</string>
+    <string name="ReserveNow">ReserveNow</string>
+    <string name="textInfoNuevoEntre">Agenda un nuevo entrenamiento</string>
 
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string-array name="spinner_dias">
 

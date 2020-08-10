@@ -84,12 +84,5 @@
   <path
       android:pathData="M37.767,37.689a4.513,5.135 0,1 0,9.026 0a4.513,5.135 0,1 0,-9.026 0z"
       android:fillColor="#FCD462"/>
-  /*<path
-      android:fillColor="#FF000000"
-      android:pathData="M0,52.5a52.5,52.5 0,1 0,105 0a52.5,52.5 0,1 0,-105 0z"
-      android:strokeLineJoin="miter"
-      android:strokeWidth="6"
-      android:fillAlpha="0"
-      android:strokeColor="#FB46D"
-      android:strokeLineCap="butt"/>*/
+ 
 </vector>
