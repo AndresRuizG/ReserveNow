@@ -6,7 +6,12 @@ import android.os.Bundle
 import com.projectmoviles.myapplication.LoginActivity
 import com.projectmoviles.myapplication.R
 import com.projectmoviles.myapplication.admin.AdminActivity
+import kotlinx.android.synthetic.main.activity_login.*
 import kotlinx.android.synthetic.main.activity_usuario.*
+
+enum class ProviderType{
+    BASIC
+}
 
 class UsuarioActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -35,4 +40,5 @@ class UsuarioActivity : AppCompatActivity() {
             finish()
         }
     }
+
 }
