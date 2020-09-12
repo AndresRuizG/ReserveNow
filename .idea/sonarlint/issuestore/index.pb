@@ -13,3 +13,7 @@ p
 @app/src/main/java/com/projectmoviles/myapplication/constantes.kt,a\a\aab45cfae0f8394d12ac77bb82d40d3df9e3a723
 P
  app/src/main/AndroidManifest.xml,8\c\8c55c3ccc257e5907959013f99656e4c8ec3903e
+V
+&app/src/main/res/drawable/ic_error.xml,6\3\6372a3b828d5c5296921c0757f7e290cb79d59e3
+S
+#.idea/sonarlint/issuestore/index.pb,9\f\9fe84ebb15faf917b7def6236dba604453cc61e0

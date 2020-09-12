@@ -8,9 +8,10 @@ import com.projectmoviles.myapplication.R
 import com.projectmoviles.myapplication.admin.AdminActivity
 import kotlinx.android.synthetic.main.activity_login.*
 import kotlinx.android.synthetic.main.activity_usuario.*
-
+//Provider type es para desiganr el metod de autenticacion
 enum class ProviderType{
-    BASIC
+    GOOGLE,
+    FACEBOOK
 }
 
 class UsuarioActivity : AppCompatActivity() {
