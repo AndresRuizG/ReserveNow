@@ -11,6 +11,8 @@ const val MENSAJE_COMPRA_PASE_SEMESTRAL ="Usted ha comprado un pase semestral"
 const val MENSAJE_COMPRA_PASE_ANUAL ="Usted ha comprado un pase anual"
 const val MENSAJE_USUARIO_CREADO ="Usuario registrado exitosamente"
 const val ERROR_CREAR_USUARIO ="Error en la creación de usuario"
+const val CORREO_ENVIADO ="Se ha enviado un correo para restablecer la contraseña"
+const val ERROR_ENVIAR_CORREO ="No se ha podido enviar el correo"
 const val intent ="intent"
 /*pantalla registrarse*/
 var NOMBRRE_USUARIO="nombreUser"
