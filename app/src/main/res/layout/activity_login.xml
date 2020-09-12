@@ -34,7 +34,7 @@
 
     <EditText
         android:id="@+id/editTextEmailAddress"
-        android:layout_width="231dp"
+        android:layout_width="254dp"
         android:layout_height="43dp"
         android:layout_marginTop="176dp"
         android:layout_marginEnd="52dp"
@@ -50,8 +50,8 @@
 
     <EditText
         android:id="@+id/editTextPassword"
-        android:layout_width="233dp"
-        android:layout_height="42dp"
+        android:layout_width="254dp"
+        android:layout_height="41dp"
         android:layout_marginTop="44dp"
         android:ems="10"
         android:gravity="center"
@@ -175,4 +175,13 @@
         app:layout_constraintVertical_bias="0.4"
         app:srcCompat="@drawable/userfit" />
 
+    <ImageView
+        android:id="@+id/showContrasenia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextPassword"
+        app:layout_constraintEnd_toEndOf="@+id/editTextPassword"
+        app:layout_constraintTop_toTopOf="@+id/editTextPassword"
+        app:srcCompat="@drawable/ic_show_password_24dp"
+        android:contentDescription="@string/ver_contrasenia_login" />
 </androidx.constraintlayout.widget.ConstraintLayout>

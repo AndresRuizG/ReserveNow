@@ -14,6 +14,7 @@ const val ERROR_CREAR_USUARIO ="Error en la creación de usuario"
 const val CORREO_ENVIADO ="Se ha enviado un correo para restablecer la contraseña"
 const val ERROR_ENVIAR_CORREO ="No se ha podido enviar el correo"
 const val intent ="intent"
+const val FILE_SECRET = "encrypted_shared_preferences"
 /*pantalla registrarse*/
 var NOMBRRE_USUARIO="nombreUser"
 var CORREO="correo"
