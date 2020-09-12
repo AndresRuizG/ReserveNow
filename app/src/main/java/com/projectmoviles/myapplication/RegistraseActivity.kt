@@ -4,6 +4,8 @@ import android.app.AlertDialog
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.text.method.HideReturnsTransformationMethod
+import android.text.method.PasswordTransformationMethod
 import android.util.Patterns
 import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
@@ -16,11 +18,23 @@ import java.util.HashMap
 class RegistraseActivity : AppCompatActivity() {
     private lateinit var auth: FirebaseAuth
     lateinit var mDatabase: FirebaseFirestore
+    private var mIsShowPass = false
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_registrarse)
         auth = FirebaseAuth.getInstance();
         mDatabase = FirebaseFirestore.getInstance()
+        verContrasenia(mIsShowPass)
+        verConfirmarContrasenia(mIsShowPass)
+        show_Contrasenia.setOnClickListener {
+            mIsShowPass=!mIsShowPass
+            verContrasenia(mIsShowPass)
+        }
+        showConfirmarContrasenia.setOnClickListener {
+            mIsShowPass=!mIsShowPass
+            verConfirmarContrasenia(mIsShowPass)
+        }
+
         btnRegistrarDatos.setOnClickListener {
             NOMBRRE_USUARIO = editTextPersonName.text.toString();
             CORREO = editTextTextEmailAddress.text.toString()
@@ -97,5 +111,25 @@ class RegistraseActivity : AppCompatActivity() {
         builder.setPositiveButton("Aceptar", null)
         val dialog: AlertDialog = builder.create()
         dialog.show()
+    }
+    fun verContrasenia(isShow: Boolean){
+        if(isShow){
+            editTextTextPassword.transformationMethod = HideReturnsTransformationMethod.getInstance()
+            show_Contrasenia.setImageResource(R.drawable.ic_hide_password_24dp)
+        }else{
+            editTextTextPassword.transformationMethod = PasswordTransformationMethod.getInstance()
+            show_Contrasenia.setImageResource(R.drawable.ic_show_password_24dp)
+        }
+        editTextTextPassword.setSelection(editTextTextPassword.text.toString().length)
+    }
+    fun verConfirmarContrasenia(isShow: Boolean){
+        if(isShow){
+            editTextPasswordConfirm.transformationMethod = HideReturnsTransformationMethod.getInstance()
+            showConfirmarContrasenia.setImageResource(R.drawable.ic_hide_password_24dp)
+        }else{
+            editTextPasswordConfirm.transformationMethod = PasswordTransformationMethod.getInstance()
+            showConfirmarContrasenia.setImageResource(R.drawable.ic_show_password_24dp)
+        }
+        editTextPasswordConfirm.setSelection(editTextPasswordConfirm.text.toString().length)
     }
 }

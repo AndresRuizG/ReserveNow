@@ -98,6 +98,9 @@
     <string name="btnFacebook">TODO</string>
     <string name="restablecer_contrasenia">RESTABLECER CONTRASEÑA</string>
     <string name="enviar_correo">enviar</string>
+    <string name="ver_contrasenia">TODO</string>
+    <string name="ver_confirmar_contrasenia">TODO</string>
+    <string name="ver_contrasenia_login">TODO</string>
 
 
     <string-array name="spinner_dias">
