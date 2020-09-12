@@ -64,18 +64,12 @@ class LoginActivity : AppCompatActivity() {
         bundle.putString("Message", "Integracion de firebase completa")
         analytics.logEvent("InitScreen", bundle)
         inicioSesion()
-        //inicioSesionGoogle()
-
-    }
-   /* private fun inicioSesionGoogle(){
-        val prefs =getSharedPreferences(getString(R.string.prefs_file), Context.MODE_PRIVATE)
-        val correo = prefs.getString("correo", null)
-        val provider = prefs.getString("provider", null)
-        if(correo !=null && provider !=null){
-            showHomeUsuario(correo, ProviderType.valueOf(provider))
+        textViewOlvidasteContrasenia.setOnClickListener {
+            var resContraseniaIntent = Intent(this, RestablecerContraseniaActivity::class.java)
+            startActivity(resContraseniaIntent)
         }
 
-    }*/
+    }
     fun inicioSesion(){
         title ="Autenticacion"
         btnInicio.setOnClickListener {

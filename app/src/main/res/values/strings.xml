@@ -96,6 +96,8 @@
     <string name="imagen_agenda">TODO</string>
     <string name="btnGoogle">TODO</string>
     <string name="btnFacebook">TODO</string>
+    <string name="restablecer_contrasenia">RESTABLECER CONTRASEÑA</string>
+    <string name="enviar_correo">enviar</string>
 
 
     <string-array name="spinner_dias">
