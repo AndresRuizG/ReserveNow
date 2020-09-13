@@ -1,8 +1,11 @@
 package com.projectmoviles.myapplication.User
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.Gravity
 import android.view.MenuItem
+import android.widget.RelativeLayout
+import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.GravityCompat
@@ -19,6 +22,37 @@ class UsuarioActivity : AppCompatActivity(), NavigationView.OnNavigationItemSele
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_usuario)
+
+        var relativeLayoutAgendar: RelativeLayout = findViewById(R.id.RelativeLayoutAgendar)
+        relativeLayoutAgendar.setOnClickListener{
+            Toast.makeText(
+                getApplicationContext(),
+                "Agendar", Toast.LENGTH_SHORT
+            ).show()
+            var intent = Intent(this, UsuarioAgregarAgendaActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
+        var relativeLayoutMembresia: RelativeLayout = findViewById(R.id.RelativeLayoutMembresia)
+        relativeLayoutAgendar.setOnClickListener{
+            Toast.makeText(
+                getApplicationContext(),
+                "Agendar", Toast.LENGTH_SHORT
+            ).show()
+            var intent = Intent(this, MembresiaUsuarioActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
+        var relativeLayoutHistorial: RelativeLayout = findViewById(R.id.RelativeLayoutHistorial)
+        relativeLayoutAgendar.setOnClickListener{
+            Toast.makeText(
+                getApplicationContext(),
+                "Agendar", Toast.LENGTH_SHORT
+            ).show()
+            var intent = Intent(this, HistorialUsuarioActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
 
         drawerLayout = findViewById(R.id.drawer_menu)
         navigationView = findViewById(R.id.nav_view)
@@ -55,6 +89,7 @@ class UsuarioActivity : AppCompatActivity(), NavigationView.OnNavigationItemSele
         }*/
         return true;
     }
+
 
 
 }

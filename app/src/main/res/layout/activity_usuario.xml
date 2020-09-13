@@ -6,8 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorAmarilloFondo"
-    tools:context=".User.UsuarioActivity"
     android:fitsSystemWindows="true"
+    tools:context=".User.UsuarioActivity"
     tools:openDrawer="start">
 
     <com.google.android.material.navigation.NavigationView
@@ -54,6 +54,7 @@
                 android:layout_width="0dp"
                 android:layout_height="175dp"
                 android:layout_marginTop="9dp"
+                android:clickable="true"
                 android:orientation="horizontal"
                 android:padding="10dp"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -62,6 +63,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/imageView13">
 
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/card"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_margin="10dp"
@@ -71,14 +73,19 @@
                     app:cardMaxElevation="2dp">
 
                     <RelativeLayout
+                        android:id="@+id/RelativeLayoutAgendar"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent">
+                        android:layout_height="match_parent"
+                        android:clickable="true"
+                        android:clipChildren="true"
+                        android:contextClickable="true"
+                        android:longClickable="true">
 
                         <TextView
                             android:id="@+id/txtAgendar2"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_below="@id/imageView16"
+                            android:layout_below="@+id/imageViewAgendar"
                             android:layout_centerHorizontal="true"
                             android:layout_marginTop="0dp"
                             android:fontFamily="@font/roboto"
@@ -87,12 +94,13 @@
                             android:textSize="24dp" />
 
                         <ImageView
-                            android:id="@+id/imageView16"
+                            android:id="@+id/imageViewAgendar"
                             android:layout_width="90dp"
                             android:layout_height="90dp"
                             android:layout_centerHorizontal="true"
                             android:layout_marginTop="5dp"
                             app:srcCompat="@drawable/ic_btnagendar" />
+
                     </RelativeLayout>
                 </androidx.cardview.widget.CardView>
 
@@ -106,6 +114,7 @@
                     app:cardMaxElevation="2dp">
 
                     <RelativeLayout
+                        android:id="@+id/RelativeLayoutHistorial"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
 
@@ -136,6 +145,7 @@
                 android:layout_width="0dp"
                 android:layout_height="175dp"
                 android:layout_marginTop="9dp"
+                android:clickable="true"
                 android:orientation="horizontal"
                 android:padding="10dp"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -154,6 +164,7 @@
                     app:cardMaxElevation="2dp">
 
                     <RelativeLayout
+                        android:id="@+id/RelativeLayoutMembresia"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
 
