@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_gfondo"
+
+    tools:context=".User.UsuarioAgregarAgendaActivity">
+
+    <ImageButton
+        android:id="@+id/btn_atrasagendausuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="347dp"
+        android:backgroundTint="#FBD46D"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back" />
+
+    <TextView
+        android:id="@+id/textViewAgenda2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto"
+        android:text="@string/txtAgendar"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_atrasagendausuario"
+        app:layout_constraintStart_toEndOf="@+id/btn_atrasagendausuario"
+        app:layout_constraintTop_toTopOf="@+id/btn_atrasagendausuario" />
+
+    <Button
+        android:id="@+id/btn_checkhorario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:background="@drawable/ic_btncheck"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_cancelhorario"
+        app:layout_constraintStart_toEndOf="@+id/btn_cancelhorario"
+        app:layout_constraintTop_toTopOf="@+id/btn_cancelhorario" />
+
+    <Button
+        android:id="@+id/btn_cancelhorario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="104dp"
+        android:background="@drawable/ic_btncancel"
+        app:layout_constraintEnd_toEndOf="@+id/buttonHora"
+        app:layout_constraintStart_toStartOf="@+id/buttonHora"
+        app:layout_constraintTop_toBottomOf="@+id/buttonHora" />
+
+    <Button
+        android:id="@+id/buttonDia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginEnd="30dp"
+        android:backgroundTint="@color/colorAccent"
+        android:fontFamily="@font/roboto"
+        android:onClick="AbrirCalendario"
+        android:text="Día"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        app:layout_constraintEnd_toStartOf="@+id/textEditDia"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonHora"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="74dp"
+        android:backgroundTint="@color/colorAccent"
+        android:fontFamily="@font/roboto"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:text="Hora"
+        android:onClick="AbrirHora"
+        app:layout_constraintEnd_toEndOf="@+id/buttonDia"
+        app:layout_constraintStart_toStartOf="@+id/buttonDia"
+        app:layout_constraintTop_toBottomOf="@+id/buttonDia" />
+
+    <EditText
+        android:id="@+id/textEditDia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonDia"
+        app:layout_constraintStart_toEndOf="@+id/buttonDia"
+        app:layout_constraintTop_toTopOf="@+id/buttonDia" />
+
+    <EditText
+        android:id="@+id/textEditHora"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonHora"
+        app:layout_constraintStart_toEndOf="@+id/buttonHora"
+        app:layout_constraintTop_toTopOf="@+id/buttonHora" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
