@@ -29,25 +29,25 @@ class UsuarioActivity : AppCompatActivity(), NavigationView.OnNavigationItemSele
                 getApplicationContext(),
                 "Agendar", Toast.LENGTH_SHORT
             ).show()
-            var intent = Intent(this, UsuarioAgregarAgendaActivity::class.java)
+            var intent = Intent(this, AgendaUsuarioActivity::class.java)
             startActivity(intent)
             finish()
         }
         var relativeLayoutMembresia: RelativeLayout = findViewById(R.id.RelativeLayoutMembresia)
-        relativeLayoutAgendar.setOnClickListener{
+        relativeLayoutMembresia.setOnClickListener{
             Toast.makeText(
                 getApplicationContext(),
-                "Agendar", Toast.LENGTH_SHORT
+                "Membresia", Toast.LENGTH_SHORT
             ).show()
             var intent = Intent(this, MembresiaUsuarioActivity::class.java)
             startActivity(intent)
             finish()
         }
         var relativeLayoutHistorial: RelativeLayout = findViewById(R.id.RelativeLayoutHistorial)
-        relativeLayoutAgendar.setOnClickListener{
+        relativeLayoutHistorial.setOnClickListener{
             Toast.makeText(
                 getApplicationContext(),
-                "Agendar", Toast.LENGTH_SHORT
+                "Historial", Toast.LENGTH_SHORT
             ).show()
             var intent = Intent(this, HistorialUsuarioActivity::class.java)
             startActivity(intent)
