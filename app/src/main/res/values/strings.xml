@@ -1,3 +1,114 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="facebook_app_id">706531940198853</string>
+    <string name="fb_login_protocol_scheme">fb706531940198853</string>
+    <string name="app_name">Reserve Now</string>
+    <string name="BackgoundGym">TODO</string>
+    <string name="FondoTransparente">TODO</string>
+    <string name="olvidaste_tu_contrase"><u>¿Olvidaste tu contraseña?</u></string>
+    <string name="recordarme">Recordarme</string>
+    <string name="correo_electronico">Correo Electrónico</string>
+    <string name="contrasenia">Contraseña</string>
+    <string name="gymfondo">GymFondo</string>
+    <string name="userfit">userFit</string>
+    <string name="pass">pass</string>
+    <string name="btnInicioSesion">Iniciar Sesión</string>
+    <string name="btnInicioLogin">Iniciar Sesión</string>
+    <string name="btnRegistrarse">Registrarse</string>
+    <string name="no_tienes_cuenta">¿Aún no tienes cuenta?</string>
+    <string name="imgcorreo">imgcorreo</string>
+    <string name="confirmar_contrase_a">Confirmar Contraseña</string>
+    <string name="imgUser">TODO</string>
+    <string name="nombre">Nombre</string>
+    <string name="imgFacebook">TODO</string>
+    <string name="gimnasio">GIMNASIO</string>
+    <string name="tipo_de_membresia">TIPO DE MEMBRESIA</string>
+    <string name="dias_vigentes">DIAS VIGENTES</string>
+    <string name="fecha_de_vencimiento">FECHA DE VENCIMIENTO</string>
+    <string name="renovar">RENOVAR</string>
+    <string name="elipse">TODO</string>
+    <string name="bckground_datos">TODO</string>
+    <string name="barra_superior">TODO</string>
+    <string name="barra_inferior">TODO</string>
+    <string name="caledario">TODO</string>
+    <string name="compraDiarioa">COMPRAR</string>
+    <string name="pase_diario">PASE DIARIO</string>
+    <string name="_2_00">$2,00</string>
+    <string name="accesos">ACCESOS</string>
+    <string name="bailoterapia">-Bailoterapia</string>
+    <string name="m_quinas">-Máquinas</string>
+    <string name="img_diario">TODO</string>
+    <string name="img_tarjeta">TODO</string>
+    <string name="pase_mensual">PASE MENSUAL</string>
+    <string name="_22_00">$22,00</string>
+    <string name="body_combat">-Body Combat</string>
+    <string name="aer_bicos">Aeróbicos</string>
+    <string name="boton_derecha">TODO</string>
+    <string name="boton_izquierda">TODO</string>
+    <string name="membresia">Membresia</string>
+    <string name="home_icono">TODO</string>
+    <string name="pase_semestral">PASE SEMESTRAL</string>
+    <string name="_120_00">$120,00</string>
+    <string name="pase_anual">PASE ANUAL</string>
+    <string name="_240_00">$240,00</string>
+    <string name="ingresa_tus_datos">INGRESA TUS DATOS</string>
+    <string name="prefs_file">com.projectmoviles.myapplication.PREFERENCE_FILE_KEY</string>
+    <string name="txtMembresia">Membresia</string>
+
+    <string name="txtAgendar">Agendar</string>
+
+    <string name="txtHistorial">Historial</string>
+
+    <string name="txtAdministrar">Administrar</string>
+
+    <string name="title_activity_admin">AdminActivity</string>
+    <string name="hello_world">Hello Square World!</string>
+
+    <string name="txtAdminDeportista">Deportistas</string>
+
+    <string name="txtAdminHorarios">Horarios</string>
+
+    <string name="txtInicio">Inicio</string>
+
+    <string name="txtFinal">Final</string>
+
+    <string name="txtEtiqueta">Etiqueta</string>
+
+    <string name="SelectDia">Seleccione un dia</string>
+    <string name="txtEntrenamiento">Entrenamiento</string>
+    <string name="txtKcal">Kcal</string>
+    <string name="txtTiempo">Horas Entrenamiento</string>
+    <string name="txtSemana">Semana 1</string>
+    <string name="txtContadorEntrenamientos">2</string>
+    <string name="txtAvancesHistorial">Pecho</string>
+    <string name="txtScore">Score</string>
+    <string name="adm_home_btn_opciones">TODO</string>
+    <string name="btn_home">TODO</string>
+    <string name="imagen_pesa">TODO</string>
+    <string name="btn_opciones">TODO</string>
+    <string name="check_adicional">Adicional</string>
+    <string name="adicional">Adicional</string>
+    <string name="text_comentario">Comentario</string>
+    <string name="text_m_quinas">Máquinas</string>
+    <string name="btn_regresar">TODO</string>
+    <string name="imagen_reloj">TODO</string>
+    <string name="imagen_linea">TODO</string>
+    <string name="imagen_etiqueta">TODO</string>
+    <string name="imagen_agenda">TODO</string>
+    <string name="btnGoogle">TODO</string>
+    <string name="btnFacebook">TODO</string>
+    <string name="restablecer_contrasenia">RESTABLECER CONTRASEÑA</string>
+    <string name="enviar_correo">enviar</string>
+    <string name="ver_contrasenia">TODO</string>
+    <string name="ver_confirmar_contrasenia">TODO</string>
+    <string name="ver_contrasenia_login">TODO</string>
+
+
+    <string-array name="spinner_dias">
+
+        <item>Lunes - Viernes</item>
+
+        <item>Sabado</item>
+
+    </string-array>
+
 </resources>
