@@ -15,11 +15,11 @@ import javax.xml.datatype.DatatypeConstants.MONTHS
 //import kotlinx.android.synthetic.main.activity_usuario.btn_homeusuario
 
 class HistorialUsuarioActivity : AppCompatActivity() {
-    val email = intent.getStringExtra("USER_EMAIL") //variable unica para cada usuario con esta hacemos las consultas a la bdd
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_historial_usuario)
+        val email = intent.getStringExtra("USER_EMAIL") //variable unica para cada usuario con esta hacemos las consultas a la bdd
 
         val txtE = findViewById<TextView>(R.id.txtNumEntrenamientos)
         txtE.setText(R.string.entrenamientos)

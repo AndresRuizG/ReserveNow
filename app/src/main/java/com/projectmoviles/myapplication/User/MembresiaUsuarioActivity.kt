@@ -12,10 +12,11 @@ import kotlinx.android.synthetic.main.activity_membresia_usuario.*
 
 class MembresiaUsuarioActivity : AppCompatActivity() {
     lateinit var mDatabase: FirebaseFirestore
-    val email = intent.getStringExtra("USER_EMAIL") //variable unica para cada usuario con esta hacemos las consultas a la bdd
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        val email = intent.getStringExtra("USER_EMAIL") //variable unica para cada usuario con esta hacemos las consultas a la bdd
+
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_membresia_usuario)
         //generar consulta a la base para jalar datos
