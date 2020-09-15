@@ -6,7 +6,7 @@ import android.os.Bundle
 import android.widget.CalendarView
 import com.projectmoviles.myapplication.R
 import kotlinx.android.synthetic.main.activity_historial_usuario.*
-//import kotlinx.android.synthetic.main.activity_usuario.btn_homeusuario
+import kotlinx.android.synthetic.main.activity_usuario.btn_homeusuario
 
 class HistorialUsuarioActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

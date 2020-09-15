@@ -92,5 +92,12 @@
         android:pathData="M58.625,60.266a3.75,3.75 0,1 0,7.5 0a3.75,3.75 0,1 0,-7.5 0z"
         android:fillColor="#FF4F19"/>
   </group>
-
+  <path
+      android:fillColor="#FF000000"
+      android:pathData="M0,52.5a52.5,52.5 0,1 0,105 0a52.5,52.5 0,1 0,-105 0z"
+      android:strokeLineJoin="miter"
+      android:strokeWidth="6"
+      android:fillAlpha="0"
+      android:strokeColor="#FBD46D"
+      android:strokeLineCap="butt"/>
 </vector>

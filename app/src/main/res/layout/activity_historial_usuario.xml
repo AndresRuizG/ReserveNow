@@ -7,6 +7,15 @@
     android:background="@drawable/ic_gfondo"
 
     tools:context=".User.HistorialUsuarioActivity">
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginEnd="216dp"
+        android:layout_marginBottom="508dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_group_historial" />
 
     <ImageButton
         android:id="@+id/btn_homeusuario"
@@ -38,13 +47,13 @@
         android:layout_width="349dp"
         android:layout_height="309dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="224dp"
+        android:layout_marginTop="52dp"
         android:layout_marginEnd="8dp"
         android:background="#FFFFFF"
         android:backgroundTint="@android:color/background_light"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_homeusuario" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <TextView
         android:id="@+id/textView14"
