@@ -98,6 +98,14 @@
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="textViewNombre">Nombre</string>
+    <string name="textViewFecha">Fecha</string>
+    <string name="textViewHoraInicio">Hora Inicio</string>
+    <string name="textViewHoraFin">Hora Fin</string>
+    <string name="btn_checkhorario">btn_checkhorario</string>
+    <string name="buttonDia">Día</string>
+    <string name="buttonHoraIni">Hora Inicio</string>
+    <string name="buttonHoraFinal">Hora Final</string>
 
     <string-array name="spinner_dias">
 
