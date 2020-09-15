@@ -2,11 +2,14 @@ package com.projectmoviles.myapplication.User
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.MenuItem
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.projectmoviles.myapplication.LoginActivity
 import com.projectmoviles.myapplication.MENSAJE_BIENVEINDA
 import com.projectmoviles.myapplication.R
+import com.projectmoviles.myapplication.admin.AdminActivity
+import kotlinx.android.synthetic.main.activity_login.*
 import kotlinx.android.synthetic.main.activity_usuario.*
 
 //Provider type es para desiganr el metod de autenticacion
@@ -24,7 +27,7 @@ class UsuarioActivity : AppCompatActivity() {
 
         btn_agendarusuario.setOnClickListener{
             var intent = Intent(this, AgendaUsuarioActivity::class.java)
-
+            intent.putExtra("USER_EMAIL",email)
 
             startActivity(intent)
             finish()
@@ -32,6 +35,7 @@ class UsuarioActivity : AppCompatActivity() {
         }
         btn_historialusuario.setOnClickListener{
             var intent = Intent(this, HistorialUsuarioActivity::class.java)
+            intent.putExtra("USER_EMAIL",email)
             startActivity(intent)
             finish()
         }
@@ -50,5 +54,18 @@ class UsuarioActivity : AppCompatActivity() {
             finish()
         }
     }
+
+    fun onNavigationItemSelected(item: MenuItem): Boolean {
+        /*switch (menuItem.getItemId()){
+            case R.id.nav_perfil:
+            TODO
+
+            case R.id.nav_salir:
+            TODO
+        }*/
+        return true;
+    }
+
+
 
 }

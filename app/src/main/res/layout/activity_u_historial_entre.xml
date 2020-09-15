@@ -8,58 +8,59 @@
 
     tools:context=".User.UHistorialEntreActivity">
 
+    <ImageView
+        android:id="@+id/imageViewelipse3"
+        android:layout_width="244dp"
+        android:layout_height="235dp"
+        android:layout_marginEnd="244dp"
+        android:layout_marginBottom="40dp"
+        android:contentDescription="@string/elipse"
+        app:layout_constraintBottom_toTopOf="@+id/imageView10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_ellipse" />
+
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="341dp"
-        android:layout_height="331dp"
-        android:layout_marginBottom="200dp"
+        android:layout_width="374dp"
+        android:layout_height="357dp"
+        android:layout_marginBottom="96dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.771"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView14"
-        app:layout_constraintVertical_bias="1.0">
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent">
 
         <TextView
-            android:id="@+id/textView5"
+            android:id="@+id/textViewFuerza"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:drawableStart="@android:drawable/btn_star_big_on"
+            android:layout_height="100dp"
+            android:drawableStart="@drawable/ic_gimnasio"
             android:fontFamily="@font/roboto"
-            android:text="Informacion usuario agenda" />
+            android:text="@string/Fuerza"
+            android:textAlignment="center"
+            android:textSize="24sp" />
 
         <TextView
-            android:id="@+id/textView8"
+            android:id="@+id/textViewCardio"
+            
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:drawableStart="@android:drawable/btn_star_big_on"
+            android:layout_height="100dp"
+            android:drawableStart="@drawable/ic_rapido"
             android:fontFamily="@font/roboto"
-            android:text="Informacion usuario agenda" />
+            android:text="@string/Cardio"
+            android:textAlignment="center"
+            android:textSize="24sp" />
 
         <TextView
             android:id="@+id/textView9"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:drawableStart="@android:drawable/btn_star_big_on"
+            android:layout_height="100dp"
+            android:drawableStart="@drawable/ic_gimnasio_1"
             android:fontFamily="@font/roboto"
-            android:text="Informacion usuario agenda" />
+            android:text="@string/abdomen"
+            android:textAlignment="center"
+            android:textSize="24sp" />
 
-        <TextView
-            android:id="@+id/textView10"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:drawableStart="@android:drawable/btn_star_big_on"
-            android:fontFamily="@font/roboto"
-            android:text="Informacion usuario agenda" />
-
-        <TextView
-            android:id="@+id/textView11"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:drawableStart="@android:drawable/btn_star_big_on"
-            android:fontFamily="@font/roboto"
-            android:text="Informacion usuario agenda" />
     </LinearLayout>
 
     <TextView
@@ -77,14 +78,12 @@
 
     <ImageView
         android:id="@+id/imageView14"
-        android:layout_width="85dp"
-        android:layout_height="86dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="12dp"
-        app:layout_constraintEnd_toEndOf="@+id/textViewHistorial"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_back"
+        android:layout_width="67dp"
+        android:layout_height="81dp"
+        android:layout_marginEnd="88dp"
+        android:layout_marginBottom="88dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewelipse3"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewelipse3"
         app:srcCompat="@drawable/ic_imgcal" />
 
     <Button
@@ -96,5 +95,18 @@
         android:background="@drawable/back"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewFecha"
+        android:layout_width="236dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="188dp"
+        android:layout_marginBottom="24dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout"
+        app:layout_constraintTop_toBottomOf="@+id/textViewHistorial" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
