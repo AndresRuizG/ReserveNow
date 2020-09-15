@@ -1,6 +1,7 @@
 package com.projectmoviles.myapplication
 
 const val MENSAJE_BIENVEINDA ="BIENVENIDO"
+const val KEY_CENTRODEPORTIVO= "centroDeportivo"
 const val MENSAJE_ERROR_CORREO ="Ingrese un correo electónico valido"
 const val MENSAJE_ERROR_CONTRASENIA ="Ingrese una contraseña que tenga almenos 8 caracteres"
 const val MENSAJE_ERROR_CONTRASENIAS_IGUALES ="Las contraseñas no coinciden"
