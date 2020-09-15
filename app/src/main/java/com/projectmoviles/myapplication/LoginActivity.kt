@@ -162,6 +162,8 @@ class LoginActivity : AppCompatActivity() {
     }
     fun showHomeUsuario(){
         val homeIntent = Intent(this, UsuarioActivity::class.java)
+      ////
+        homeIntent.putExtra("USER_EMAIL",auth.currentUser?.email)
         startActivity(homeIntent)
     }
 

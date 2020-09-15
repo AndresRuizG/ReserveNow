@@ -8,6 +8,7 @@ import android.widget.CalendarView
 import android.widget.TextView
 import com.projectmoviles.myapplication.R
 import kotlinx.android.synthetic.main.activity_historial_usuario.*
+import kotlinx.android.synthetic.main.activity_usuario.btn_homeusuario
 import kotlinx.android.synthetic.main.activity_u_historial_entre.*
 import javax.xml.datatype.DatatypeConstants.MONTHS
 
