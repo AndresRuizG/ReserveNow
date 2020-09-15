@@ -75,12 +75,5 @@
       android:pathData="M74.563,64.5V78.563c0,1.035 0.839,1.875 1.875,1.875h0.938c0.162,0 0.319,-0.023 0.469,-0.061 -0.808,-0.208 -1.406,-0.94 -1.406,-1.814V64.5"
       android:fillColor="#1BD7DE"
       android:fillType="evenOdd"/>
-  <path
-      android:fillColor="#FF000000"
-      android:pathData="M0,52.5a52.5,52.5 0,1 0,105 0a52.5,52.5 0,1 0,-105 0z"
-      android:strokeLineJoin="miter"
-      android:strokeWidth="6"
-      android:fillAlpha="0"
-      android:strokeColor="#FBD46D"
-      android:strokeLineCap="butt"/>
+
 </vector>

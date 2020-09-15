@@ -5,33 +5,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/ic_gfondo"
-
     tools:context=".User.AgendaUsuarioActivity">
-
-    <ImageView
-        android:id="@+id/imageAgendaG"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="224dp"
-        android:layout_marginBottom="512dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/gagendar"
-        android:contentDescription="@string/imagen_agenda" />
 
     <ImageButton
         android:id="@+id/btn_homeusuario"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="1dp"
         android:layout_marginEnd="347dp"
         android:backgroundTint="#00FFFFFF"
+        android:contentDescription="@string/btn_regresar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/back"
-        android:contentDescription="@string/btn_regresar" />
+        app:srcCompat="@drawable/back" />
 
     <TextView
         android:id="@+id/textViewAgenda"
@@ -66,8 +53,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageAgendaG"
-        app:layout_constraintVertical_bias="0.143">
+        app:layout_constraintTop_toTopOf="parent">
 
         <TextView
             android:id="@+id/textView5"
