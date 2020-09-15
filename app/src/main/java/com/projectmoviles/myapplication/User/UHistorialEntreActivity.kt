@@ -3,6 +3,8 @@ package com.projectmoviles.myapplication.User
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
+import android.widget.TextView
 import com.projectmoviles.myapplication.R
 import kotlinx.android.synthetic.main.activity_u_historial_entre.*
 
@@ -15,5 +17,12 @@ class UHistorialEntreActivity : AppCompatActivity() {
             startActivity(intent)
             finish()
         }
+
+        //var textViewFecha = TextView(this,findViewById(R.id.textViewFecha))
+
+
+
+
+
     }
 }

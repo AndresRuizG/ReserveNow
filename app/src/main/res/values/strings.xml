@@ -92,6 +92,23 @@
     <string name="imagen_linea">TODO</string>
     <string name="imagen_etiqueta">TODO</string>
     <string name="imagen_agenda">TODO</string>
+    <string name="textViewReserveNow">ReserveNow</string>
+    <string name="ReserveNow">ReserveNow</string>
+    <string name="textInfoNuevoEntre">Agenda un nuevo entrenamiento</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="Fuerza">Fuerza Avanzado</string>
+    <string name="Cardio">Cardio Avanzado</string>
+    <string name="abdomen">Abdomen Avanzado</string>
+    <string name="fecha">Fecha del calendario</string>
+    <string name="historial">Historial</string>
+    <string name="entrenamientos">10</string>
+    <string name="calorias">560</string>
+    <string name="horas">2</string>
+
+
+
 
 
     <string-array name="spinner_dias">
