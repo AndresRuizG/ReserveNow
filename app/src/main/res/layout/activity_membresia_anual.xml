@@ -7,6 +7,7 @@
     android:background="@drawable/ic_gfondo"
 
     tools:context=".User.MembresiaAnualActivity">
+
     <ImageView
         android:id="@+id/imageViewelipse"
         android:layout_width="244dp"
