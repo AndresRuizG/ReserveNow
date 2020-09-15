@@ -1,4 +1,6 @@
 <resources>
+    <string name="facebook_app_id">706531940198853</string>
+    <string name="fb_login_protocol_scheme">fb706531940198853</string>
     <string name="app_name">Reserve Now</string>
     <string name="BackgoundGym">TODO</string>
     <string name="FondoTransparente">TODO</string>
@@ -10,13 +12,13 @@
     <string name="userfit">userFit</string>
     <string name="pass">pass</string>
     <string name="btnInicioSesion">Iniciar Sesión</string>
+    <string name="btnInicioLogin">Iniciar Sesión</string>
     <string name="btnRegistrarse">Registrarse</string>
     <string name="no_tienes_cuenta">¿Aún no tienes cuenta?</string>
     <string name="imgcorreo">imgcorreo</string>
     <string name="confirmar_contrase_a">Confirmar Contraseña</string>
     <string name="imgUser">TODO</string>
     <string name="nombre">Nombre</string>
-    <string name="imgGoogle">TODO</string>
     <string name="imgFacebook">TODO</string>
     <string name="gimnasio">GIMNASIO</string>
     <string name="tipo_de_membresia">TIPO DE MEMBRESIA</string>
@@ -49,7 +51,7 @@
     <string name="pase_anual">PASE ANUAL</string>
     <string name="_240_00">$240,00</string>
     <string name="ingresa_tus_datos">INGRESA TUS DATOS</string>
-
+    <string name="prefs_file">com.projectmoviles.myapplication.PREFERENCE_FILE_KEY</string>
     <string name="txtMembresia">Membresia</string>
 
     <string name="txtAgendar">Agendar</string>
@@ -95,6 +97,13 @@
     <string name="textViewReserveNow">ReserveNow</string>
     <string name="ReserveNow">ReserveNow</string>
     <string name="textInfoNuevoEntre">Agenda un nuevo entrenamiento</string>
+    <string name="btnGoogle">TODO</string>
+    <string name="btnFacebook">TODO</string>
+    <string name="restablecer_contrasenia">RESTABLECER CONTRASEÑA</string>
+    <string name="enviar_correo">enviar</string>
+    <string name="ver_contrasenia">TODO</string>
+    <string name="ver_confirmar_contrasenia">TODO</string>
+    <string name="ver_contrasenia_login">TODO</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
