@@ -9,9 +9,7 @@ import android.text.method.PasswordTransformationMethod
 import android.util.Patterns
 import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.firestore.FirebaseFirestore
-import kotlinx.android.synthetic.main.activity_login.*
 import kotlinx.android.synthetic.main.activity_registrarse.*
 import java.util.HashMap
 
@@ -55,7 +53,8 @@ class RegistraseActivity : AppCompatActivity() {
             if(!CORREO.isEmpty() && Patterns.EMAIL_ADDRESS.matcher(CORREO).matches() &&
                 !CONTRASENIA.isEmpty() && CONTRASENIA.length >=8 && !CONFIRMAR_CONTRASENIA.isEmpty() && CONTRASENIA==CONFIRMAR_CONTRASENIA){
                 registroUsuario(CORREO, CONTRASENIA)
-                guardarUsuario(NOMBRRE_USUARIO, CORREO, CONTRASENIA)
+                // ESCOGER GYMS
+                guardarUsuario(NOMBRRE_USUARIO, CORREO, CONTRASENIA,"VARADERO")
                 limpiarCampos()
                 irALogin()
             }
@@ -65,17 +64,19 @@ class RegistraseActivity : AppCompatActivity() {
         }
     }
 
-    fun guardarUsuario(NOMBRRE_USUARIO:String, CORREO:String, CONTRASENIA:String){
+    fun guardarUsuario(NOMBRE_USUARIO:String, CORREO:String, CONTRASENIA:String, CentroDeportivo: String){
 
         var map : HashMap<String, String>
                 = HashMap<String, String> ()
-        map.put("nombre", NOMBRRE_USUARIO);
+        map.put("nombre", NOMBRE_USUARIO);
         map.put("correo", CORREO);
         map.put("contrasenia", CONTRASENIA);
+        map.put("centroDeportivo", CentroDeportivo);
         mDatabase.collection("usuarios").document()
             .set(map)
             .addOnSuccessListener {
                 Toast.makeText(this,MENSAJE_USUARIO_CREADO, Toast.LENGTH_LONG).show()
+
             }
             .addOnFailureListener {
                 Toast.makeText(this,ERROR_CREAR_USUARIO, Toast.LENGTH_LONG).show()
