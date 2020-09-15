@@ -11,6 +11,8 @@ class MembresiaUsuarioActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_membresia_usuario)
+        val email = intent.getStringExtra("USER_EMAIL") //variable unica para cada usuario con esta hacemos las consultas a la bdd
+        //generar consulta a la base para jalar datos
         btnRenovar.setOnClickListener {
             val intent= Intent(this, MembresiaDiariaActivity::class.java)
             startActivity(intent)

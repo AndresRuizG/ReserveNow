@@ -8,6 +8,7 @@ import android.text.method.HideReturnsTransformationMethod
 import android.text.method.PasswordTransformationMethod
 import android.util.Patterns
 import android.widget.Toast
+import com.google.android.gms.tasks.Task
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
 import kotlinx.android.synthetic.main.activity_registrarse.*
@@ -64,14 +65,14 @@ class RegistraseActivity : AppCompatActivity() {
         }
     }
 
-    fun guardarUsuario(NOMBRE_USUARIO:String, CORREO:String, CONTRASENIA:String, CentroDeportivo: String){
+    fun guardarUsuario(NOMBRE_USUARIO:String, CORREO:String, CONTRASENIA:String, centroDeportivo: String) {
 
         var map : HashMap<String, String>
                 = HashMap<String, String> ()
         map.put("nombre", NOMBRE_USUARIO);
         map.put("correo", CORREO);
         map.put("contrasenia", CONTRASENIA);
-        map.put("centroDeportivo", CentroDeportivo);
+        map.put("centroDeportivo", centroDeportivo);
         mDatabase.collection("usuarios").document()
             .set(map)
             .addOnSuccessListener {
