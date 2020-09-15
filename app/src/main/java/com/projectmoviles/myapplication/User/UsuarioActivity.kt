@@ -2,6 +2,7 @@ package com.projectmoviles.myapplication.User
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.MenuItem
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.projectmoviles.myapplication.LoginActivity
@@ -53,7 +54,7 @@ class UsuarioActivity : AppCompatActivity() {
         }
     }
 
-    override fun onNavigationItemSelected(item: MenuItem): Boolean {
+    fun onNavigationItemSelected(item: MenuItem): Boolean {
         /*switch (menuItem.getItemId()){
             case R.id.nav_perfil:
             TODO
