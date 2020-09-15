@@ -18,7 +18,11 @@ class UsuarioAgregarAgendaActivity : AppCompatActivity() {
                 getApplicationContext(),
                 "Horario Registrado", Toast.LENGTH_SHORT
             ).show()
-            intentAgendar(email)
+            var intent = Intent(this, AgendaUsuarioActivity::class.java)
+            intent.putExtra("USER_EMAIL", email)
+
+            startActivity(intent)
+            finish()
 
         }
         btn_cancelhorario.setOnClickListener {
@@ -26,18 +30,20 @@ class UsuarioAgregarAgendaActivity : AppCompatActivity() {
                 getApplicationContext(),
                 "Horario no registrado", Toast.LENGTH_SHORT
             ).show()
-            intentAgendar(email)
+            var intent = Intent(this, AgendaUsuarioActivity::class.java)
+            intent.putExtra("USER_EMAIL", email)
+
+            startActivity(intent)
+            finish()
 
         }
         btn_atrasagendausuario.setOnClickListener {
-           intentAgendar(email)
+            var intent = Intent(this, AgendaUsuarioActivity::class.java)
+            intent.putExtra("USER_EMAIL", email)
+
+            startActivity(intent)
+            finish()
         }
     }
-    fun intentAgendar(email:String){
-        var intent = Intent(this, AgendaUsuarioActivity::class.java)
-        intent.putExtra("USER_EMAIL", email)
 
-        startActivity(intent)
-        finish()
-    }
 }
