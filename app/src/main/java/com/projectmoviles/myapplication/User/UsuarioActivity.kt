@@ -27,7 +27,7 @@ class UsuarioActivity : AppCompatActivity() {
 
         btn_agendarusuario.setOnClickListener{
             var intent = Intent(this, AgendaUsuarioActivity::class.java)
-
+            intent.putExtra("USER_EMAIL",email)
 
             startActivity(intent)
             finish()
@@ -35,6 +35,7 @@ class UsuarioActivity : AppCompatActivity() {
         }
         btn_historialusuario.setOnClickListener{
             var intent = Intent(this, HistorialUsuarioActivity::class.java)
+            intent.putExtra("USER_EMAIL",email)
             startActivity(intent)
             finish()
         }

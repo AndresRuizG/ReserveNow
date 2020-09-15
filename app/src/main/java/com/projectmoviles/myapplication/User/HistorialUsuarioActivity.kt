@@ -15,6 +15,8 @@ import javax.xml.datatype.DatatypeConstants.MONTHS
 //import kotlinx.android.synthetic.main.activity_usuario.btn_homeusuario
 
 class HistorialUsuarioActivity : AppCompatActivity() {
+    val email = intent.getStringExtra("USER_EMAIL") //variable unica para cada usuario con esta hacemos las consultas a la bdd
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_historial_usuario)
@@ -28,6 +30,8 @@ class HistorialUsuarioActivity : AppCompatActivity() {
 
         btn_homeusuario.setOnClickListener{
             var intent = Intent(this, UsuarioActivity::class.java)
+            intent.putExtra("USER_EMAIL",email)
+
             startActivity(intent)
             finish()
         }
@@ -38,6 +42,8 @@ class HistorialUsuarioActivity : AppCompatActivity() {
             intent.putExtra("godina", year)
             intent.putExtra("mesec", month)
             intent.putExtra("dan", dayOfMonth)
+            intent.putExtra("USER_EMAIL",email)
+
             startActivity(intent)
             finish()
         })

@@ -8,6 +8,8 @@ import com.projectmoviles.myapplication.R
 import kotlinx.android.synthetic.main.activity_usuario_agregar_agenda.*
 
 class UsuarioAgregarAgendaActivity : AppCompatActivity() {
+    val email = intent.getStringExtra("USER_EMAIL") //variable unica para cada usuario con esta hacemos las consultas a la bdd
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -17,23 +19,26 @@ class UsuarioAgregarAgendaActivity : AppCompatActivity() {
                 getApplicationContext(),
                 "Horario Registrado", Toast.LENGTH_SHORT
             ).show()
-            var intent = Intent(this, AgendaUsuarioActivity::class.java)
-            startActivity(intent)
-            finish()
+            intentAgendar()
+
         }
         btn_cancelhorario.setOnClickListener {
             Toast.makeText(
                 getApplicationContext(),
                 "Horario no registrado", Toast.LENGTH_SHORT
             ).show()
-            var intent = Intent(this, AgendaUsuarioActivity::class.java)
-            startActivity(intent)
-            finish()
+            intentAgendar()
+
         }
         btn_atrasagendausuario.setOnClickListener {
-            var intent = Intent(this, AgendaUsuarioActivity::class.java)
-            startActivity(intent)
-            finish()
+           intentAgendar()
         }
+    }
+    fun intentAgendar(){
+        var intent = Intent(this, AgendaUsuarioActivity::class.java)
+        intent.putExtra("USER_EMAIL", email)
+
+        startActivity(intent)
+        finish()
     }
 }
