@@ -13,6 +13,7 @@ import com.projectmoviles.myapplication.DeportistaAdapter
 import com.projectmoviles.myapplication.MENSAJE_USUARIO_CREADO
 import com.projectmoviles.myapplication.R
 import kotlinx.android.synthetic.main.activity_membresia_usuario.*
+import java.time.LocalDateTime
 
 
 class MembresiaUsuarioActivity : AppCompatActivity() {
@@ -26,39 +27,27 @@ class MembresiaUsuarioActivity : AppCompatActivity() {
         setContentView(R.layout.activity_membresia_usuario)
         deportistaList = mutableListOf()
         mDatabase = FirebaseDatabase.getInstance().getReference("usuarios")
-    mDatabase.addValueEventListener(object : ValueEventListener{
-        override fun onDataChange(snapshot: DataSnapshot) {
-            if(snapshot!!.exists()){
-                for(deportista in snapshot.children){
-                    val deportista = deportista.getValue(Deportista::class.java)
-                    deportistaList.add(deportista!!)
-                }
-                //val adapter = DeportistaAdapter(applicationContext,R.layout.activity_membresia_usuario,deportistaList)
-                   Log.w("VALDRA",deportistaList[1].correo);
-                    editTextNameGimnasio.setText(deportistaList[1].centroDeportivo)
-                Toast.makeText(applicationContext, deportistaList[1].centroDeportivo, Toast.LENGTH_LONG).show()
-            }
-        }
+        editTextNameGimnasio.setText("VARADERO")
+        editTextTipoMembresia.setText("Actualizar Membresia")
+        editTextDiasVigentes.setText("0")
+        editTextFechaVencimiento.setText(LocalDateTime.now().toString().subSequence(0,10))
 
-        override fun onCancelled(error: DatabaseError) {
-            TODO("Not yet implemented")
-        }
-
-    })
 
 
 
         btnRenovar.setOnClickListener {
             val intent= Intent(this, MembresiaDiariaActivity::class.java)
             intent.putExtra("USER_EMAIL", email)
-
             startActivity(intent)
+            finish()
         }
         btnHomeMembresiaDatos.setOnClickListener {
             val intent= Intent(this, UsuarioActivity::class.java)
             intent.putExtra("USER_EMAIL", email)
 
             startActivity(intent)
+            finish()
+
         }
 
     }

@@ -10,11 +10,12 @@ import java.text.SimpleDateFormat
 import java.util.*
 
 class MembresiaDiariaActivity : AppCompatActivity() {
-    val email = intent.getStringExtra("USER_EMAIL") //variable unica para cada usuario con esta hacemos las consultas a la bdd
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_membresia_diaria)
+        val email = intent.getStringExtra("USER_EMAIL") //variable unica para cada usuario con esta hacemos las consultas a la bdd
+
         btnDerechaDiario.setOnClickListener {
             intent = Intent(this, MembresiaMensualActivity::class.java)
             intent.putExtra("USER_EMAIL",email)
