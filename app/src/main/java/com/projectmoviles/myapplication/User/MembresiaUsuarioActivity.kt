@@ -3,9 +3,11 @@ package com.projectmoviles.myapplication.User
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.google.firebase.database.DatabaseReference
 import com.google.firebase.firestore.FirebaseFirestore
+import com.projectmoviles.myapplication.KEY_CENTRODEPORTIVO
+import com.projectmoviles.myapplication.MENSAJE_USUARIO_CREADO
 import com.projectmoviles.myapplication.R
 import kotlinx.android.synthetic.main.activity_membresia_usuario.*
 
@@ -21,18 +23,22 @@ class MembresiaUsuarioActivity : AppCompatActivity() {
         setContentView(R.layout.activity_membresia_usuario)
         //generar consulta a la base para jalar datos
         mDatabase = FirebaseFirestore.getInstance()
-        mDatabase.collection("usuarios")
-            .whereEqualTo(email, true) //ojo con la consulta
-            .get()
-            .addOnSuccessListener { documents ->
-                for (document in documents) {
-
-                    Log.d("DOCUMENTOS", "${document.id} => ${document.data}")
+        val docRef = mDatabase.collection("usuarios").document(email)
+        docRef.get()
+            .addOnSuccessListener { document ->
+                if (document != null) {
+                    Toast.makeText(this, "Deportista encontrado    "+document, Toast.LENGTH_LONG).show()
+                   val centroid = document.getString(KEY_CENTRODEPORTIVO)
+                    editTextNameGimnasio.setText(centroid)
+                } else {
+                    Log.d("TAG", "No such document")
                 }
             }
             .addOnFailureListener { exception ->
-                Log.w("Documentos ERROR", "Error getting documents: ", exception)
+                Log.d("TAG", "get failed with ", exception)
             }
+
+
         btnRenovar.setOnClickListener {
             val intent= Intent(this, MembresiaDiariaActivity::class.java)
             intent.putExtra("USER_EMAIL",email)
